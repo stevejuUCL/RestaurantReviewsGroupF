@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Restaurant Review</title>
+    <title>Restaurant Ranking</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link href="css/homeStyle.css" type="text/css" rel="stylesheet" media="all">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -11,27 +11,37 @@
     <script src="js/homeJS.js"></script>
 </head>
 <body>
-<div class="navBar">
-    <a href="index.html" class="logo">Feat</a>
-    <a href = "logIn.html" class="other">Log In</a>
-    <a href = "signUp.html" class="other">Sign Up</a>
-</div>
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #dc3545;">
+    <a class="navbar-brand" href="index.html" style="color: #ffffff; font-size: 2em">Feat</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="navItem" href="#">Reservations</a>
+            <a class="navItem" href="#">Restaurants</a>
+            <a class="navItem" href="#">Ranking</a>
+            <a class="navItem" href="#">MyFavorites</a>
+        </div>
+    </div>
+    <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search for Everything" aria-label="Search" style="width: 17em;">
+        <button class="btn btn-outline-homemade1 my-2 my-sm-0" type="submit">Search</button>
+        <button class="btn btn-outline-homemade1 my-sm-0" type="submit" style="margin-left: 3em;">My Account</button>
+    </form>
+</nav>
 <div>
     <img src="img/searchBackground.jpg" class = "searchBackground">
-    <span><input type="text" placeholder="Search..." class = "searchBar"><input type="submit" value="Search"></span>
+    <span><input type="search" placeholder="Search..." class = "searchBar form-control mr-sm-2"><input type="submit" value="Search" class="searchButton btn btn-outline-light"></span>
 </div>
 <div>
-    <img src="">
-    <img src="">
-    <img src="">
-    <img src="">
-    <img src="">
-    <img src="">
-    <img src="">
-    <img src="">
-    <img src="">
-    <img src="">
+    <label>By type</label>
 </div>
-
+<div>
+    <label>By location</label>
+</div>
+<div>
+    <label>Footer</label>
+</div>
 </body>
 </html>
