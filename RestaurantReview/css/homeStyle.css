@@ -127,3 +127,8 @@ img {vertical-align: middle;}
     transform: translate(-50%, -50%);
 }
 
+
+.btn-outline-homemade1 {
+    color: #ffffff;
+    border-color: #ffffff;
+}
