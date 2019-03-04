@@ -139,7 +139,7 @@ img {
 .searchButton:hover{
     color: #dc3545;
     background-color: #ffffff;
-    border-color: #ffffff;
+    border-color: #dc3545;
 }
 
 
@@ -166,4 +166,11 @@ img {
 .navItem:hover{
     color: #000000;
     text-decoration: none;
+}
+
+.searchBackground{
+
+    object-fit: cover;
+    object-position: top;
+    
 }
