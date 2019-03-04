@@ -174,9 +174,9 @@ img {
     text-align: center;
 }
 
-.single-member{width: 20%; float: left; margin: 0px; background-color: #fff; text-align: center; position: relative;}
+.single-member{width: 20%; float: left; background-color: #fff; text-align: center; position: relative;}
 .member-image img{max-width: 100%; vertical-align: middle;}
-.social-touch a{display: inline-block; width: 27px; height: 26px; vertical-align: middle; margin: 0 2px; background-image: url(../images/social-icons.png); background-repeat: no-repeat; opacity: 0.7; transition: 0.3s;}
+.social-touch a{display: inline-block; width: 27px; height: 26px; vertical-align: middle; margin: 0 2px; background-image: url(../img/social-icons.png); background-repeat: no-repeat; opacity: 0.7; transition: 0.3s;}
 .social-touch a:hover{opacity: 1; transition: 0.3s;}
 .fb-touch{background-position: 0 0;}
 .tweet-touch{background-position: -35px 0;}
@@ -186,10 +186,10 @@ img {
 .icon-colored .linkedin-touch{background-position: -71px -27px;}
 
 
-.effect-2{max-height: 302px; min-height: 302px; overflow: hidden;}
-.effect-2 h3{padding-top: 7px; line-height: 33px;}
-.effect-2 .member-image{border-bottom: 5px solid #dc3545; height: 212px; overflow: hidden; width: 100%; transition: 0.4s; display: inline-block; float: none; vertical-align: middle;}
-.effect-2 .member-info{transition: 0.4s;}
-.effect-2 .member-image img{width: 100%; vertical-align: bottom;}
-.effect-2 .social-touch{background-color: #dc3545; float: left; left: 0; bottom: 0; overflow: hidden; padding: 5px 0; width: 100%; transition: 0.4s;}
-.effect-2:hover .member-image{height: 81px; transition: 0.4s;}
+.typeEffect{max-height: 302px; min-height: 302px; overflow: hidden;}
+.typeEffect h3{padding-top: 7px; line-height: 33px;}
+.typeEffect .member-image{border-bottom: 5px solid #dc3545; height: 212px; overflow: hidden; width: 100%; transition: 0.4s; display: inline-block; float: none; vertical-align: middle;}
+.typeEffect .member-info{transition: 0.4s;}
+.typeEffect .member-image img{width: 100%; vertical-align: bottom;}
+.typeEffect .social-touch{background-color: #dc3545; float: left; left: 0; bottom: 0; overflow: hidden; padding: 5px 0; width: 100%; transition: 0.4s;}
+.typeEffect:hover .member-image{height: 81px; transition: 0.4s;}
