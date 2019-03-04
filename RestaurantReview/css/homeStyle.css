@@ -121,6 +121,11 @@ img {
     left: 47%;
     transform: translate(-50%, -50%);
 }
+.searchBar:hover{
+    color: #dc3545;
+    border-color:#dc3545;
+    box-shadow: 1px 1px 1px 3px #dc3545;
+}
 
 .searchButton {
     position: absolute;
@@ -129,6 +134,12 @@ img {
     top: 260px;
     left: 70%;
     transform: translate(-50%, -50%);
+}
+
+.searchButton:hover{
+    color:#ffffff;
+    background-color: #dc3545;
+    border-color: #dc3545;
 }
 
 .btn-outline-homemade1 {
