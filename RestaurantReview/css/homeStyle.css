@@ -1,30 +1,3 @@
-/* Add a black background color to the top navigation */
-.navBar {
-    background-color: #80002a;
-    overflow: hidden;
-    height: 60px;
-    margin-top: -10px;
-    margin-left: -10px;
-    margin-right: -10px;
-}
-
-/* Style the links inside the navigation bar */
-.navBar a.logo {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 8px 10px;
-    text-decoration: none;
-    font-size: 36px;
-}
-
-/* Change the color of links on hover */
-.navBar a.logo:hover {
-    background-color: #ddd;
-    color: black;
-    height: 60px;
-}
-
 
 .navBar input[type=text] {
     float: right;
@@ -163,7 +136,22 @@ img {
     border-color: #ffffff;
 }
 
+.btn-outline-homemade1:hover {
+    color: #dc3545;
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+.btn-outline-homemade1.focus, .btn-outline-homemade1:focus {
+    box-shadow: 0 0 0 .2rem rgba(255, 255, 255, .5)
+}
+
 .navItem{
     color: #ffffff;
     margin-left: 2em;
+}
+
+.navItem:hover{
+    color: #000000;
+    text-decoration: none;
 }
