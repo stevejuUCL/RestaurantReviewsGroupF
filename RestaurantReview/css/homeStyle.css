@@ -137,10 +137,11 @@ img {
 }
 
 .searchButton:hover{
-    color:#ffffff;
-    background-color: #dc3545;
-    border-color: #dc3545;
+    color: #dc3545;
+    background-color: #ffffff;
+    border-color: #ffffff;
 }
+
 
 .btn-outline-homemade1 {
     color: #ffffff;
