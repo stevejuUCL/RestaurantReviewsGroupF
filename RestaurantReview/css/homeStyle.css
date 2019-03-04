@@ -191,5 +191,5 @@ img {
 .typeEffect .member-image{border-bottom: 5px solid #dc3545; height: 212px; overflow: hidden; width: 100%; transition: 0.4s; display: inline-block; float: none; vertical-align: middle;}
 .typeEffect .member-info{transition: 0.4s;}
 .typeEffect .member-image img{width: 100%; vertical-align: bottom;}
-.typeEffect .social-touch{background-color: #dc3545; float: left; left: 0; bottom: 0; overflow: hidden; padding: 5px 0; width: 100%; transition: 0.4s;}
+.typeEffect .social-touch{background-color: #ffc107; float: left; left: 0; bottom: 0; overflow: hidden; padding: 5px 0; width: 100%; transition: 0.4s;}
 .typeEffect:hover .member-image{height: 81px; transition: 0.4s;}
