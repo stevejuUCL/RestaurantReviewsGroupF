@@ -713,20 +713,14 @@ img.w3order-img {
 .social-icons ul li a.fa.fa-google-plus:hover {
     color: #d34836; 
 }
-.social-icons ul li a.fa.fa-dribbble{
-    background: #ec4a89;
-	border-color:#ec4a89;
-}
-.social-icons ul li a.fa.fa-dribbble:hover {
-    color: #ec4a89; 
-}
-.social-icons ul li a.fa.fa-rss{
+.social-icons ul li a.fa.fa-weibo{
     background: #ee802f;
 	border-color:#ee802f;
-} 
-.social-icons ul li a.fa.fa-rss:hover {
-    color: #ee802f; 
-} 
+}
+.social-icons ul li a.fa.fa-weibo:hover {
+    color: #ee802f;
+}
+
 .icon {
     vertical-align: top;
     overflow: hidden;
