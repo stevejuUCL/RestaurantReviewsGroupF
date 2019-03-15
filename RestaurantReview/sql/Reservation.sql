@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `reservation` (
-  `ReservationID` int(11) NOT NULL,
+  `ReservationID` int(11) NOT NULL AUTO_INCREMENT,
   `RestaurantID` int(11) NOT NULL,
   `BusinessmanID` int(11) NOT NULL,
   `time` time NOT NULL,

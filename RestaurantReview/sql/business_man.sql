@@ -32,7 +32,7 @@ USE `business man`;
 
 DROP TABLE IF EXISTS `business man`;
 CREATE TABLE `business man` (
-  `businessmanID` int(11) NOT NULL,
+  `businessmanID` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(15) NOT NULL,
   `password` varchar(35) NOT NULL,
   `name` varchar(35) NOT NULL,
