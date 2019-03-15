@@ -21,8 +21,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `business man`
 --
-CREATE DATABASE IF NOT EXISTS `business man` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-USE `business man`;
+CREATE DATABASE IF NOT EXISTS `restaurantreview` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `restaurantreview`;
 
 -- --------------------------------------------------------
 
@@ -30,9 +30,9 @@ USE `business man`;
 -- Table structure for table `business man`
 --
 
-DROP TABLE IF EXISTS `business man`;
-CREATE TABLE `business man` (
-  `businessmanID` int(11) NOT NULL AUTO_INCREMENT,
+DROP TABLE IF EXISTS `businessman`;
+CREATE TABLE `businessman` (
+  `businessmanID` int(11) NOT NULL,
   `username` varchar(15) NOT NULL,
   `password` varchar(35) NOT NULL,
   `name` varchar(35) NOT NULL,
@@ -47,9 +47,9 @@ CREATE TABLE `business man` (
 --
 
 --
--- Indexes for table `business man`
+-- Indexes for table `businessman`
 --
-ALTER TABLE `business man`
+ALTER TABLE `businessman`
   ADD PRIMARY KEY (`businessmanID`);
 
 --
@@ -59,7 +59,7 @@ ALTER TABLE `business man`
 --
 -- AUTO_INCREMENT for table `business man`
 --
-ALTER TABLE `business man`
+ALTER TABLE `businessman`
   MODIFY `businessmanID` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 

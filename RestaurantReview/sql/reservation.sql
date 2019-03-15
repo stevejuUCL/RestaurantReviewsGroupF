@@ -27,7 +27,9 @@ SET time_zone = "+00:00";
 --
 -- Table structure for table `reservation`
 --
-CREATE DATABASE if NOT EXISTS 'restaurantreview';
+CREATE DATABASE if NOT EXISTS `restaurantreview`;
+USE `restaurantreview`;
+DROP TABLE IF EXISTS `reservation`;
 CREATE TABLE `reservation` (
   `ReservationID` int(11) NOT NULL,
   `RestaurantID` int(11) NOT NULL,

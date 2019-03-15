@@ -3,24 +3,29 @@ require_once('PHP_Database/phpDatabaseConnection.php');
 
 $connection = connectToDb();
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+$input_date = $_POST['time'];
+$date = date("Y-m-d H:i:s",strtotime($input_date));
+
+/*if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     //validate using isset loop
 
     if (isset($_POST['time'])) {
-        $time = $_POST['time'];
+        $input_date = $_POST['time'];
     } else {
-        $message = "no time<br>";
+        $message = "No Time Input<br>";
         header('location: GetReservations.php');
         exit;
     }
-}
+}*/
 
     $GuestNumber = $_POST['GuestNumber'] ?? '1';
+    $reservationID = $_POST['reservationID'];
 
+    //query to alter database
+    $qryModify = "UPDATE `reservation` SET `time` = '$date', `GuestNumber` = '$GuestNumber' WHERE `reservation`.`ReservationID` = $reservationID ";
 
-    $qryModify = "REPLACE INTO reservation ( time, GuestNumber) VALUES ($time, $GuestNumber)";
-
+    //test if query works
     echo $qryModify;
 
     $result = mysqli_query($connection, $qryModify);

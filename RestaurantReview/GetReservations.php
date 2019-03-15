@@ -1,6 +1,3 @@
-</head>
-<body>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,6 +24,18 @@
     .form-popup {
         display: none;
     }
+    h1 {
+        padding: 30px;
+    }
+    h2 {
+        padding:15px;
+    }
+    button {
+        background-color: #e24945;
+        text-align: center;
+        color: white;
+    }
+
 </style>
 <body>
 <!-- banner -->
@@ -145,14 +154,17 @@
     $connection = connectToDb();
 
     // Build the query statement
-    $query = "SELECT Restaurant.name, Restaurant.address, reservation.time, reservation.GuestNumber
+    $query = "SELECT Restaurant.name, Restaurant.address, reservation.time, reservation.GuestNumber, reservation.ReservationID
               FROM reservation JOIN Restaurant ON Reservation.RestaurantID = Restaurant.restaurantID 
               ORDER BY reservation.time";
+              //WHERE businessman.ID = ??
 
     //echo $query;
 
     // Execute the query and retrieve the results
     $result = mysqli_query($connection, $query);
+
+    //display results in table form
 
     ?>
 
@@ -175,7 +187,10 @@
 
                 <div class="form-popup" id="ModifyForm">
                     <form class="form-container" method="post" action="ModifyReservation.php">
-                        <h1>Change your Reservation</h1>
+                        <h2>Change your Reservation</h2>
+
+                        <!--Input reservation ID but set display to hidden to make sure modify correct reservation-->
+                        <input type="hidden" name="reservationID" value="<?php echo $reservation['ReservationID'] ?>"
 
                         <label><b>Date & Time</b></label>
                         <input type="datetime-local" name="time" required>
@@ -183,7 +198,7 @@
                         <label><b>Number of people</b></label>
                         <input type="number"  name="GuestNumber" required>
 
-                        <button type="submit" value='Modify Reservation'>Submit</button>
+                        <button type="submit" value="">Submit</button>
                         <button type="button" onclick="closeForm()">Close</button>
                     </form>
                 </div>
