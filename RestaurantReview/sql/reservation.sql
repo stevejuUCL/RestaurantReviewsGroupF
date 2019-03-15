@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.4
+-- version 4.8.5
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 25, 2019 at 03:55 PM
--- Server version: 10.1.37-MariaDB
--- PHP Version: 7.3.0
+-- Generation Time: Mar 15, 2019 at 12:40 AM
+-- Server version: 10.1.38-MariaDB
+-- PHP Version: 7.3.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `comp0034 project`
+-- Database: `restaurantreview`
 --
 
 -- --------------------------------------------------------
@@ -27,22 +27,20 @@ SET time_zone = "+00:00";
 --
 -- Table structure for table `reservation`
 --
-
+CREATE DATABASE if NOT EXISTS 'restaurantreview';
 CREATE TABLE `reservation` (
-  `ReservationID` int(11) NOT NULL AUTO_INCREMENT,
+  `ReservationID` int(11) NOT NULL,
   `RestaurantID` int(11) NOT NULL,
   `BusinessmanID` int(11) NOT NULL,
-  `time` time NOT NULL,
-  `date` date NOT NULL,
+  `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `GuestNumber` int(11) NOT NULL,
   `additionalRequest` varchar(400) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Indexes for dumped tables
---
 
---
+
+
+
 -- Indexes for table `reservation`
 --
 ALTER TABLE `reservation`
