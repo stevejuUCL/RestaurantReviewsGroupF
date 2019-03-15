@@ -8,11 +8,8 @@
     border-radius: 10px;
     padding: 1px;
     transition: box-shadow .30s;
-    height: 300px;
-    text-align: center;
+    height: 350px;
 }
-ul.panel {
-    left: 10%;
 }
 .panel:hover{
     box-shadow: #000 5px 5px 25px;
@@ -22,4 +19,10 @@ ul.panel {
     height: 120px;
     border-radius: 60px;
     margin-top: -60px;
+}
+.panel-text1 {
+    text-align: center;
+}
+.panel-text2 {
+    margin-left: 10%;
 }
