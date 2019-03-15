@@ -23,6 +23,11 @@
     <link href="http://fonts.googleapis.com/css?family=Yantramanav:100,300,400,500,700,900" rel="stylesheet">
     <!-- //web-fonts -->
 </head>
+<style>
+    .form-popup {
+        display: none;
+    }
+</style>
 <body>
 <!-- banner -->
 <div class="banner about-w3bnr">
@@ -134,7 +139,7 @@
     <h1>My Reservations</h1>
     <br>
     <?php
-    require_once 'phpDatabaseConnection.php';
+    require_once 'PHP_Database/phpDatabaseConnection.php';
 
     // Connect to the database
     $connection = connectToDb();
