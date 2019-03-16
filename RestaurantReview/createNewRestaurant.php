@@ -19,6 +19,12 @@
     <link href="http://fonts.googleapis.com/css?family=Yantramanav:100,300,400,500,700,900" rel="stylesheet">
     <!-- //web-fonts -->
 </head>
+<style>
+    h2 {
+        text-align: center;
+        padding: 40px;
+    }
+</style>
 <body>
 <!-- banner -->
 <div class="banner about-w3bnr">
@@ -132,107 +138,66 @@
         <li class="active">Sign Up</li>
     </ol>
 </div>
-<!-- //breadcrumb -->
-<!-- sign up-page -->
-<div class="login-page about">
-    <img class="login-w3img" src="img/img3.jpg" alt="">
-    <div class="container">
-        <h3 class="w3ls-title w3ls-title1">Sign Up to your Customer account</h3>
-        <div class="login-agileinfo">
-            <form action="createNewBusinessman.php" method="post" name="NewUserForm" onsubmit="return validateForm(this)">   <!-- added PHP sign up form -->
-                <input class="agile-ltext" type="text" name="username" placeholder="Username" minlength="5"  required="">
-                <input class="agile-ltext" type="email" name="email" placeholder="Your Email" required="">
-                <input class="agile-ltext" type="password" name="password" placeholder="Password" minlength="8"  required="">
-                <input class="agile-ltext" type="password" name="confirmPassword" placeholder="Confirm Password" minlength="8"  required="">
-                <div class="wthreelogin-text">
-                    <ul>
-                        <li>
-                            <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>
-                                <span> I agree to the terms of service</span>
-                            </label>
-                        </li>
-                    </ul>
-                    <div class="clearfix"> </div>
-                </div>
-                <input type="submit" value="Sign Up">
-            </form>
-            <p>Already have an account?  <a href="loginBusinessman.html"> Login Now!</a></p>
-        </div>
-    </div>
-</div>
-<!-- //sign up-page -->
-<!-- subscribe -->
-<div class="subscribe agileits-w3layouts">
-    <div class="container">
-        <div class="col-md-6 social-icons w3-agile-icons">
-            <h4>Keep in touch</h4>
-            <ul>
-                <li><a href="#" class="fa fa-facebook icon facebook"> </a></li>
-                <li><a href="#" class="fa fa-twitter icon twitter"> </a></li>
-                <li><a href="#" class="fa fa-google-plus icon googleplus"> </a></li>
-                <li><a class="fa fa-weibo icon fa-weibo" href="#"> </a></li>
-            </ul>
-        </div>
-        <div class="col-md-6 subscribe-right">
-            <h3 class="w3ls-title">Leave Email for<br><span>Recommendations</span></h3>
-            <form action="#" method="post">
-                <input name="email" placeholder="Enter your Email..." required="" type="email">
-                <input type="submit" value="Send to Feat">
-                <div class="clearfix"> </div>
-            </form>
-            <img alt="" class="sub-w3lsimg" src="img/i1.png"/>
-        </div>
-        <div class="clearfix"> </div>
-    </div>
-</div>
-<!-- //subscribe -->
-<!-- footer -->
-<div class="footer agileits-w3layouts">
-    <div class="container">
-        <div class="w3_footer_grids">
-            <div class="col-xs-6 col-sm-3 footer-grids w3-agileits">
-                <h3>Group</h3>
-                <ul>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                    <li><a href="#">Feedbacks</a></li>
-                    <li><a href="help.html">Need Help</a></li>
-                </ul>
-            </div>
-            <div class="col-xs-6 col-sm-3 footer-grids w3-agileits">
-                <h3>help</h3>
-                <ul>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="loginBusinessman.html">Cancel Reservation</a></li>
-                    <li><a href="loginBusinessman.html">Report</a></li>
-                </ul>
-            </div>
-            <div class="col-xs-6 col-sm-3 footer-grids w3-agileits">
-                <h3>Project info</h3>
-                <ul>
-                    <li><a href="http://www.cs.ucl.ac.uk/1819/a6u/t2/comp0034_web_development/">Moodle page</a></li>
-                    <li><a href="https://www.ucl.ac.uk/">About UCL</a></li>
-                    <li><a href="#">Project Report</a></li>
-                </ul>
-            </div>
-            <div class="col-xs-6 col-sm-3 footer-grids w3-agileits">
-                <h3>Other</h3>
-                <ul>
-                    <li><a href="#">Code</a></li>
-                    <li><a href="https://github.com/stevejuUCL/RestaurantReviewsGroupF.git">GitHub page</a></li>
-                </ul>
-            </div>
-            <div class="clearfix"> </div>
-        </div>
-    </div>
-</div>
+
+<?php
+require_once('PHP_Database/phpDatabaseConnection.php');
+
+$Username = $_POST['username'] ?? '1'; //PHP 7.0
+$email = $_POST['email'] ?? '1';
+$password = $_POST['password'] ?? '1';
+$confirmPassword = $_POST['confirmPassword'];
+
+//validate confirm password matches password
+if ($password == $confirmPassword) {
+    $qryCreate = "INSERT INTO restaurant (Username, email, password) VALUES ('" . $Username . "', '" . $email . "', '" . $password . "')";
+} else {
+    echo "The entered passwords do not match.";
+}
+
+$qryFindUsername = "SELECT * FROM restaurant ";
+$qryFindUsername .= "WHERE Username = '" . $Username . "'";
+
+$qryFindEmail = "SELECT * FROM restaurant ";
+$qryFindEmail .= "WHERE email = '" . $email . "'";
+
+$connection = connectToDb();
+
+//Check if username exists
+$resultUsername = mysqli_query($connection, $qryFindUsername);
+$resultEmail = mysqli_query($connection, $qryFindEmail);
+
+if (mysqli_num_rows($resultUsername) > 0) {
+    ?>
+    <h2><?php echo "This username is already registered."; ?> </h2>
+    <?php
+}
+else {
+    if (mysqli_num_rows($resultEmail) > 0) {
+        ?>
+        <h2><?php echo "This email is already registered."; ?> </h2>
+        <?php
+    } else {
+        $result = mysqli_query($connection, $qryCreate);
+        // check the query worked
+        if ($result) {
+            ?><h2><?php echo "New user created successfully."; ?></h2>
+            <?php
+            closeDb($connection);
+        } else {
+            echo mysqli_error($connection);
+            closeDb($connection);
+            exit;
+        }
+    }
+}
+?>
+
 
 <!-- //footer -->
-
 <!-- start-smooth-scrolling -->
 <script src="js/SmoothScroll.min.js"></script>
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
+<script src="js/move-top.js" type="text/javascript"></script>
+<script src="js/easing.js" type="text/javascript"></script>
 <script type="text/javascript">
     jQuery(document).ready(function($) {
         $(".scroll").click(function(event){
@@ -250,47 +215,6 @@
         $().UItoTop({ easingType: 'easeOutQuart' });
 
     });
-</script>
-
-<!-- validate user input to signup form -->
-<script type="text/javascript">
-
-    //check that password contains 1 uppercase, lowercase and number.
-    function checkPassword(str)
-    {
-        var re = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
-        return re.test(str);
-    }
-
-    //validate the form before submitting.
-    function validateForm(form)
-    {
-        if(form.username.value === "") {
-            alert("Username cannot be blank.");
-            form.username.focus();
-            return false;
-        }
-        re = /^\w+$/;
-        if(!re.test(form.username.value)) {
-            alert("Username must contain only letters, numbers and underscores.");
-            form.username.focus();
-            return false;
-        }
-        if(form.password.value !== "" && form.password.value === form.confirmPassword.value) {
-            if(!checkPassword(form.password.value)) {
-                alert("Invalid password: must contain at least 1 number. 1 uppercase and 1 lowercase letter.");
-                form.password.focus();
-                return false;
-            }
-        } else {
-            alert("Please check that you've entered and confirmed your password.");
-            form.password.focus();
-            return false;
-        }
-        return true;
-    }
-
-
 </script>
 <!-- //smooth-scrolling-of-move-up -->
 <!-- Bootstrap core JavaScript

@@ -143,6 +143,13 @@
     </div>
 </div>
 <!-- //banner -->
+<!-- breadcrumb -->
+<div class="container">
+    <ol class="breadcrumb w3l-crumbs">
+        <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+        <li class="active">Sign Up</li>
+    </ol>
+</div>
 
 <div class="container">
     <h1>My Reservations</h1>

@@ -20,9 +20,10 @@ SET time_zone = "+00:00";
 --
 -- Table structure for table `Restaurant`\
 --
-
+ CREATE DATABASE if NOT EXISTS `restaurantreview`;
+ USE `restaurantreview`;
 CREATE TABLE `Restaurant` (
-  `restaurantID` int(11) NOT NULL,
+  `restaurantID` int(11) NOT NULL AUTO_INCREMENT,
   `userName` varchar(100) NOT NULL,
   `password` varchar(100) NOT NULL,
   `name` varchar(100) NOT NULL,
