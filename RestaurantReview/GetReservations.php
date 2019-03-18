@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>About</title>
+    <title>Reservations</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
     <meta content="" name="keywords" />
@@ -182,6 +182,7 @@
             <th>Address</th>
             <th>Date & Time</th>
             <th>Party</th>
+            <th>Reservation ID</th>
         </tr>
 
         <?php while ($reservation = mysqli_fetch_assoc($result)) { ?>
@@ -190,14 +191,15 @@
                 <td><?php echo $reservation['address'] ?></td>
                 <td><?php echo $reservation['time'] ?></td>
                 <td><?php echo $reservation['GuestNumber'] ?></td>
+                <td><?php echo $reservation['ReservationID'] ?></td>
                 <td><button class="btn" onclick="getForm()">Modify</button></td>
 
                 <div class="form-popup" id="ModifyForm">
-                    <form class="form-container" method="post" action="ModifyReservation.php">
+                    <form class="form-container" method="post" action="modifyReservation.php">
                         <h2>Change your Reservation</h2>
 
                         <!--Input reservation ID but set display to hidden to make sure modify correct reservation-->
-                        <input type="hidden" name="reservationID" value="<?php echo $reservation['ReservationID'] ?>"
+                        <input type="text" name="reservationID" value="<?php echo $reservation['ReservationID'] ?>"
 
                         <label><b>Date & Time</b></label>
                         <input type="datetime-local" name="time" required>

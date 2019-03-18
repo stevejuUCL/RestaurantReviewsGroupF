@@ -170,6 +170,7 @@ if (mysqli_num_rows($resultUsername) > 0) {
     ?>
     <h2><?php echo "This username is already registered."; ?> </h2>
     <?php
+    mysqli_free_result($resultUsername);
 }
 else {
     if (mysqli_num_rows($resultEmail) > 0) {
@@ -178,7 +179,7 @@ else {
         <?php
     } else {
         $result = mysqli_query($connection, $qryCreate);
-        // check the query worked
+
         if ($result) {
             ?><h2><?php echo "New user created successfully."; ?></h2>
             <?php
