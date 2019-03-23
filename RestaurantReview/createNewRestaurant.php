@@ -41,13 +41,13 @@
                             <i aria-hidden="true" class="fa fa-phone"></i> Call us: +44 75291 47000
                         </li>
                         <li class="head-dpdn">
-                            <a href="loginSelection.html"><i aria-hidden="true" class="fa fa-sign-in"></i> Login</a>
+                            <a href="../HTMLfiles-noLongerUsed/loginSelection.html"><i aria-hidden="true" class="fa fa-sign-in"></i> Login</a>
                         </li>
                         <li class="head-dpdn">
-                            <a href="signupSelection.html"><i aria-hidden="true" class="fa fa-user-plus"></i> Signup</a>
+                            <a href="../HTMLfiles-noLongerUsed/signupSelection.html"><i aria-hidden="true" class="fa fa-user-plus"></i> Signup</a>
                         </li>
                         <li class="head-dpdn">
-                            <a href="help.html"><i aria-hidden="true" class="fa fa-question-circle"></i> Help</a>
+                            <a href="../HTMLfiles-noLongerUsed/help.html"><i aria-hidden="true" class="fa fa-question-circle"></i> Help</a>
                         </li>
                     </ul>
                 </div>
@@ -67,11 +67,11 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <h1><a href="index.html">Feat<span>Maker Reservations Better</span></a></h1>
+                        <h1><a href="../HTMLfiles-noLongerUsed/index.html">Feat<span>Maker Reservations Better</span></a></h1>
                     </div>
                     <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a class="active" href="index.html">Home</a></li>
+                            <li><a class="active" href="../HTMLfiles-noLongerUsed/index.html">Home</a></li>
                             <!-- Mega Menu -->
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">Restaurants <b class="caret"></b></a>
@@ -80,34 +80,34 @@
                                         <div class="col-sm-4">
                                             <ul class="multi-column-dropdown">
                                                 <h6>Food type</h6>
-                                                <li><a href="restaurants.html">Breakfast</a></li>
-                                                <li><a href="restaurants.html">Lunch</a></li>
-                                                <li><a href="restaurants.html">Dinner</a></li>
+                                                <li><a href="../HTMLfiles-noLongerUsed/restaurants.html">Breakfast</a></li>
+                                                <li><a href="../HTMLfiles-noLongerUsed/restaurants.html">Lunch</a></li>
+                                                <li><a href="../HTMLfiles-noLongerUsed/restaurants.html">Dinner</a></li>
                                             </ul>
                                         </div>
                                         <div class="col-sm-4">
                                             <ul class="multi-column-dropdown">
                                                 <h6>Cuisine</h6>
-                                                <li><a href="restaurants.html">Chinese Food</a></li>
-                                                <li><a href="restaurants.html">American Food</a></li>
-                                                <li><a href="restaurants.html">French Food</a></li>
-                                                <li><a href="restaurants.html">Italian Food</a></li>
+                                                <li><a href="../HTMLfiles-noLongerUsed/restaurants.html">Chinese Food</a></li>
+                                                <li><a href="../HTMLfiles-noLongerUsed/restaurants.html">American Food</a></li>
+                                                <li><a href="../HTMLfiles-noLongerUsed/restaurants.html">French Food</a></li>
+                                                <li><a href="../HTMLfiles-noLongerUsed/restaurants.html">Italian Food</a></li>
                                             </ul>
                                         </div>
                                         <div class="col-sm-4">
                                             <ul class="multi-column-dropdown">
                                                 <h6>Reservation type</h6>
-                                                <li><a href="restaurants.html">For Single Person</a></li>
-                                                <li><a href="restaurants.html">For Couples</a></li>
-                                                <li><a href="restaurants.html">For Groups</a></li>
+                                                <li><a href="../HTMLfiles-noLongerUsed/restaurants.html">For Single Person</a></li>
+                                                <li><a href="../HTMLfiles-noLongerUsed/restaurants.html">For Couples</a></li>
+                                                <li><a href="../HTMLfiles-noLongerUsed/restaurants.html">For Groups</a></li>
                                             </ul>
                                         </div>
                                         <div class="clearfix"></div>
                                     </div>
                                 </ul>
                             </li>
-                            <li><a href="reservations.html">Reservations</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="../HTMLfiles-noLongerUsed/reservations.html">Reservations</a></li>
+                            <li><a href="../HTMLfiles-noLongerUsed/contact.html">Contact Us</a></li>
                         </ul>
                     </div>
                     <div class="cart cart box_1">
@@ -134,7 +134,7 @@
 <!-- breadcrumb -->
 <div class="container">
     <ol class="breadcrumb w3l-crumbs">
-        <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+        <li><a href="../HTMLfiles-noLongerUsed/index.html"><i class="fa fa-home"></i> Home</a></li>
         <li class="active">Sign Up</li>
     </ol>
 </div>

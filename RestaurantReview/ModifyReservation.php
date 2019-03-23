@@ -1,7 +1,7 @@
-<?php
-require_once('PHP_Database/phpDatabaseConnection.php');
 
-$connection = connectToDb();
+<?php
+include_once('PHP_Database/phpDatabaseConnection.php');
+
 
 //get date and configure so that date format is compatible with SQL
 $input_date = $_POST['time'];
