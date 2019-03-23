@@ -4271,3 +4271,9 @@ img.w3order-img {
     font-size: .9em;
 }
 }
+tr .edit-form, tr .edit-save {
+display: none;
+}
+tr.editing .edit-form, tr.editing .edit-save {
+display: inherit;
+}

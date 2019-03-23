@@ -1,4 +1,5 @@
 <?php
+session_start();
 //Include the credentials
 require_once('dbCredentials.php');
 

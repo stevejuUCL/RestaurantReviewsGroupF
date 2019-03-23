@@ -23,7 +23,7 @@ SET time_zone = "+00:00";
  CREATE DATABASE if NOT EXISTS `restaurantreview`;
  USE `restaurantreview`;
 CREATE TABLE `Restaurant` (
-  `restaurantID` int(11) NOT NULL AUTO_INCREMENT,
+  `restaurantID` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `userName` varchar(100) NOT NULL,
   `password` varchar(100) NOT NULL,
   `name` varchar(100) NOT NULL,
@@ -38,12 +38,3 @@ CREATE TABLE `Restaurant` (
   `availableTime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Indexes for dumped tables\
---
-
---
--- Indexes for table `Restaurant`\
-
-ALTER TABLE `Restaurant`
-  ADD PRIMARY KEY (`restaurantID`);
