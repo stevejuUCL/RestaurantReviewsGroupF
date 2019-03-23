@@ -1,3 +1,4 @@
+
 <?php
 require_once('header.php');
 ?>
@@ -5,7 +6,7 @@ require_once('header.php');
 <div class="login-page about">
     <img class="login-w3img" src="../RestaurantReview/img/img3.jpg" alt="">
     <div class="container">
-        <h3 class="w3ls-title w3ls-title1">Sign Up to your Customer account</h3>
+        <h3 class="title w3ls-title1">Sign Up to your Customer account</h3>
         <div class="login-agileinfo">
             <form action="../RestaurantReview/createNewBusinessman.php" method="post" name="NewUserForm" onsubmit="return validateForm(this)">   <!-- added PHP sign up form -->
                 <input class="agile-ltext" type="text" name="username" placeholder="Username" minlength="5"  required="">

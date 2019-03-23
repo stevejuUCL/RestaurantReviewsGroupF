@@ -31,12 +31,12 @@
 <div class="banner">
     <!-- header -->
     <div class="header">
-        <div class="w3ls-header"><!-- header-one -->
+        <div class="header"><!-- header-one -->
             <div class="container">
-                <div class="w3ls-header-left">
+                <div class="header-left">
                     <p>Save your time, and make your reservation better than better!</p>
                 </div>
-                <div class="w3ls-header-right">
+                <div class="header-right">
                     <ul>
                         <li class="head-dpdn">
                             <i aria-hidden="true" class="fa fa-phone"></i> Call us: +44 75291 47000
@@ -61,7 +61,7 @@
             <div class="container">
                 <nav class="navbar navbar-default">
                     <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header w3l_logo">
+                    <div class="navbar-header logo">
                         <button class="navbar-toggle collapsed navbar-toggle1" data-target="#bs-megadropdown-tabs"
                                 data-toggle="collapse" type="button">
                             <span class="sr-only">Toggle navigation</span>
@@ -150,17 +150,17 @@
     </div>
 </div>
 <!-- add-products -->
-<div class="add-products">
+<div class="add-restaurants">
     <div class="container">
         <div class="add-products-row">
-            <div class="w3ls-add-grids">
+            <div class="add-grids">
                 <a href="formBusinessman.php">
                     <h4><span>Login here<br></span> if you are a <span>Customer</span></h4>
                     <h5>We prepared wonderful restaurants for you</h5>
                     <h6>Login Now <i aria-hidden="true" class="fa fa-arrow-circle-right"></i></h6>
                 </a>
             </div>
-            <div class="w3ls-add-grids w3ls-add-grids-right">
+            <div class="add-grids add-grids-right">
                 <a href="formRestaurant.php">
                     <h4><span>Login here<br></span> if you are a <span>Owner</span></h4>
                     <h5>Better way for business</h5>
@@ -173,9 +173,9 @@
 </div>
 <!-- //add-products -->
 <!-- order -->
-<div class="wthree-order">
+<div class="w3-order">
     <div class="container">
-        <h3 class="w3ls-title">How To Make Reservations</h3>
+        <h3 class="title">How To Make Reservations</h3>
         <p class="w3lsorder-text">Get your calender ready in 4 simple steps.</p>
         <div class="order-agileinfo">
             <div class="col-md-3 col-sm-3 col-xs-6 order-w3lsgrids">
@@ -214,7 +214,7 @@
 <!-- deals -->
 <div class="w3agile-deals">
     <div class="container">
-        <h3 class="w3ls-title">Special Services</h3>
+        <h3 class="title">Special Services</h3>
         <div class="dealsrow">
             <div class="col-md-6 col-sm-6 deals-grids">
                 <div class="deals-left">
@@ -264,7 +264,7 @@
 <!-- dishes -->
 <div class="w3agile-spldishes">
     <div class="container">
-        <h3 class="w3ls-title">Top Restaurants</h3>
+        <h3 class="title">Top Restaurants</h3>
         <div class="spldishes-agileinfo">
             <div class="col-md-3 spldishes-w3left">
                 <h5 class="w3ltitle">Feat Ranking</h5>
@@ -349,7 +349,7 @@
             </ul>
         </div>
         <div class="col-md-6 subscribe-right">
-            <h3 class="w3ls-title">Leave Email for<br><span>Recommendations</span></h3>
+            <h3 class="title">Leave Email for<br><span>Recommendations</span></h3>
             <form action="#" method="post">
                 <input name="email" placeholder="Enter your Email..." required="" type="email">
                 <input type="submit" value="Send to Feat">

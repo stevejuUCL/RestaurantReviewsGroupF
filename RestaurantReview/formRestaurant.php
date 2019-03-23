@@ -6,7 +6,7 @@ require_once('header.php');
 <div class="login-page about">
     <img class="login-w3img" src="../RestaurantReview/img/img3.jpg" alt="">
     <div class="container">
-        <h3 class="w3ls-title w3ls-title1">Login to your Restaurant Owner account</h3>
+        <h3 class="title w3ls-title1">Login to your Restaurant Owner account</h3>
         <div class="login-agileinfo">
             <form action="logInRestaurant.php" method="post">
                 <input class="agile-ltext" type="text" name="Username" placeholder="Username" required="">

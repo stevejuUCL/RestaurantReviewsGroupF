@@ -11,7 +11,7 @@
             </ul>
         </div>
         <div class="col-md-6 subscribe-right">
-            <h3 class="w3ls-title">Leave Email for<br><span>Recommendations</span></h3>
+            <h3 class="title">Leave Email for<br><span>Recommendations</span></h3>
             <form action="#" method="post">
                 <input name="email" placeholder="Enter your Email..." required="" type="email">
                 <input type="submit" value="Send to Feat">

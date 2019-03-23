@@ -42,12 +42,12 @@
 <div class="banner about-w3bnr">
     <!-- header -->
     <div class="header">
-        <div class="w3ls-header"><!-- header-one -->
+        <div class="header"><!-- header-one -->
             <div class="container">
-                <div class="w3ls-header-left">
+                <div class="header-left">
                     <p>Save your time, and make your reservation better than better!</p>
                 </div>
-                <div class="w3ls-header-right">
+                <div class="header-right">
                     <ul>
                         <li class="head-dpdn">
                             <i aria-hidden="true" class="fa fa-phone"></i> Call us: +44 75291 47000
@@ -72,7 +72,7 @@
             <div class="container">
                 <nav class="navbar navbar-default">
                     <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header w3l_logo">
+                    <div class="navbar-header logo">
                         <button class="navbar-toggle collapsed navbar-toggle1" data-target="#bs-megadropdown-tabs" data-toggle="collapse" type="button">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span>

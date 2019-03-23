@@ -1,12 +1,20 @@
+<title>Login</title>
 <?php
 require_once('header.php');
 ?>
-
+<!-- breadcrumb -->
+<div class="container">
+    <ol class="breadcrumb w3l-crumbs">
+        <li><a href="index.php"><i class="fa fa-home"></i> Home</a></li>
+        <li class="active">Login</li>
+    </ol>
+</div>
+<!-- //breadcrumb -->
 <!-- login-page -->
 <div class="login-page about">
     <img class="login-w3img" src="../RestaurantReview/img/img3.jpg" alt="">
     <div class="container">
-        <h3 class="w3ls-title w3ls-title1">Login to your Customer account</h3>
+        <h3 class="title w3ls-title1">Login to your Customer account</h3>
         <div class="login-agileinfo">
             <form action="../RestaurantReview/businessmanLogin.php" method="post">
                 <input class="agile-ltext" type="text" name="Username" placeholder="Username" required="">

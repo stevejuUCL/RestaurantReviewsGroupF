@@ -8,14 +8,14 @@ require_once('header.php');
     </div>
     <div class="container">
         <div class="add-products-row">
-            <div class="w3ls-add-grids">
+            <div class="add-grids">
                 <a href="../HTMLfiles-noLongerUsed/signupBusinessman.html">
                     <h4><span>Sign Up<br></span> as a <span>Customer</span></h4>
                     <h5>We prepared wonderful restaurants for you</h5>
                     <h6>Sign up Now <i aria-hidden="true" class="fa fa-arrow-circle-right"></i></h6>
                 </a>
             </div>
-            <div class="w3ls-add-grids w3ls-add-grids-right">
+            <div class="add-grids add-grids-right">
                 <a href="../HTMLfiles-noLongerUsed/signupRestaurantOwner.html">
                     <h4><span>Sign Up<br></span> as a <span>Owner</span></h4>
                     <h5>Better way for business</h5>
