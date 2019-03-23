@@ -17,7 +17,7 @@ $rowLogin = mysqli_fetch_array($resultLogin);
 
 if (mysqli_num_rows($resultUsername) > 0) {
     if ($rowLogin['userName'] == $Username && $rowLogin['password'] == $password) {
-        echo "Log in successful.";
+        header('Location: index.html');
     }
     else {
         echo "Incorrect password.";

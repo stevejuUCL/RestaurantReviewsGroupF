@@ -1,6 +1,5 @@
 .panel-restaurant {
     margin: 120px auto 60px;
-    text-align: center;
     background-color: white;
     width: 500px;
     border-radius: 10px;
@@ -19,6 +18,8 @@
     border-radius: 60px;
     margin-top: -60px;
 }
+
+/* The button style */
 .btn {
     color: white;
     background: rgb(48, 35, 174);
@@ -30,6 +31,7 @@
     display: inline-block;
     text-decoration: none;
     transition: background .15s;
+    margin-left: 33% ;
 }
 .btn:hover {
     background-color: rgb(81, 67, 224);
@@ -39,8 +41,8 @@
 .form-popup {
     display: none;
     position: fixed;
-    bottom: 0;
-    right: 15px;
+    bottom: 200px;
+    right: 100px;
     border: 3px solid #f1f1f1;
     z-index: 9;
 }
@@ -49,6 +51,7 @@
     max-width: 300px;
     padding: 10px;
     background-color: white;
+    text-align: center;
 }
 /* Full-width input fields */
 .form-container input[type=text] {
@@ -82,4 +85,13 @@
 /* Add some hover effects to buttons */
 .form-container .btn2:hover, .btn:hover {
     opacity: 1;
+}
+.panel-text3 {
+    text-align: center;
+}
+.panel-text4 {
+    margin-left: 10%;
+}
+.btn1 {
+    text-align: center;
 }
