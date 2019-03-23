@@ -1,13 +1,4 @@
-<?php
-session_start();
-include_once('PHP_Database/phpDatabaseConnection.php');
 
-$connection = connectToDb();
-if (!isset($_SESSION['user'])) {
-    header("Location: index.html");
-}
-
-?>
 
 <!DOCTYPE html>
 <html lang="en">

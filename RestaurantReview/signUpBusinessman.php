@@ -1,7 +1,15 @@
-
+<title>Signup</title>
 <?php
 require_once('header.php');
 ?>
+<!-- breadcrumb -->
+<div class="container">
+    <ol class="breadcrumb w3l-crumbs">
+        <li><a href="index.php"><i class="fa fa-home"></i> Home</a></li>
+        <li class="active">Signup</li>
+    </ol>
+</div>
+<!-- //breadcrumb -->
 <!-- sign up-page -->
 <div class="login-page about">
     <img class="login-w3img" src="../RestaurantReview/img/img3.jpg" alt="">
@@ -25,7 +33,7 @@ require_once('header.php');
                 </div>
                 <input type="submit" value="Sign Up">
             </form>
-            <p>Already have an account?  <a href="../HTMLfiles-noLongerUsed/loginBusinessman.html"> Login Now!</a></p>
+            <p>Already have an account?  <a href="formBusinessman.php"> Login Now!</a></p>
         </div>
     </div>
 </div>

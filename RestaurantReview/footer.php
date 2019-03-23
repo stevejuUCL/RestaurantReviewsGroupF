@@ -30,18 +30,18 @@
             <div class="col-xs-6 col-sm-3 footer-grids w3-agileits">
                 <h3>Group</h3>
                 <ul>
-                    <li><a href="../HTMLfiles-noLongerUsed/about.html">About Us</a></li>
-                    <li><a href="../HTMLfiles-noLongerUsed/contact.html">Contact Us</a></li>
+                    <li><a href="about.php">About Us</a></li>
+                    <li><a href="contact.php">Contact Us</a></li>
                     <li><a href="#">Feedbacks</a></li>
-                    <li><a href="../HTMLfiles-noLongerUsed/help.html">Need Help</a></li>
+                    <li><a href="help.php">Need Help</a></li>
                 </ul>
             </div>
             <div class="col-xs-6 col-sm-3 footer-grids w3-agileits">
                 <h3>help</h3>
                 <ul>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="../HTMLfiles-noLongerUsed/loginBusinessman.html">Cancel Reservation</a></li>
-                    <li><a href="../HTMLfiles-noLongerUsed/loginBusinessman.html">Report</a></li>
+                    <li><a href="help.php">FAQ</a></li>
+                    <li><a href="reservations.php">Cancel Reservation</a></li>
+                    <li><a href="contact.php">Report</a></li>
                 </ul>
             </div>
             <div class="col-xs-6 col-sm-3 footer-grids w3-agileits">

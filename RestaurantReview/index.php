@@ -31,12 +31,12 @@
 <div class="banner">
     <!-- header -->
     <div class="header">
-        <div class="header"><!-- header-one -->
+        <div class="w3ls-header"><!-- header-one -->
             <div class="container">
-                <div class="header-left">
+                <div class="w3ls-header-left">
                     <p>Save your time, and make your reservation better than better!</p>
                 </div>
-                <div class="header-right">
+                <div class="w3ls-header-right">
                     <ul>
                         <li class="head-dpdn">
                             <i aria-hidden="true" class="fa fa-phone"></i> Call us: +44 75291 47000
@@ -61,7 +61,7 @@
             <div class="container">
                 <nav class="navbar navbar-default">
                     <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header logo">
+                    <div class="navbar-header w3l_logo">
                         <button class="navbar-toggle collapsed navbar-toggle1" data-target="#bs-megadropdown-tabs"
                                 data-toggle="collapse" type="button">
                             <span class="sr-only">Toggle navigation</span>
@@ -69,11 +69,11 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <h1><a href="index.html">Feat<span>Maker Reservations Better</span></a></h1>
+                        <h1><a href="index.php">Feat<span>Maker Reservations Better</span></a></h1>
                     </div>
                     <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a class="active" href="index.html">Home</a></li>
+                            <li><a class="active" href="index.php">Home</a></li>
                             <!-- Mega Menu -->
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">Restaurants <b
@@ -109,7 +109,7 @@
                                     </div>
                                 </ul>
                             </li>
-                            <li><a href="GetReservations.php">Reservations</a></li>
+                            <li><a href="reservations.php">Reservations</a></li>
                             <li><a href="contact.php">Contact Us</a></li>
                         </ul>
                     </div>
@@ -173,7 +173,7 @@
 </div>
 <!-- //add-products -->
 <!-- order -->
-<div class="w3-order">
+<div class="wthree-order">
     <div class="container">
         <h3 class="title">How To Make Reservations</h3>
         <p class="w3lsorder-text">Get your calender ready in 4 simple steps.</p>
