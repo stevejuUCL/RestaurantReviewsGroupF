@@ -336,73 +336,11 @@
     </div>
 </div>
 <!-- //dishes -->
-<!-- subscribe -->
-<div class="subscribe agileits-w3layouts">
-    <div class="container">
-        <div class="col-md-6 social-icons w3-agile-icons">
-            <h4>Keep in touch</h4>
-            <ul>
-                <li><a class="fa fa-facebook icon facebook" href="#"> </a></li>
-                <li><a class="fa fa-twitter icon twitter" href="#"> </a></li>
-                <li><a class="fa fa-google-plus icon googleplus" href="#"> </a></li>
-                <li><a class="fa fa-weibo icon fa-weibo" href="#"> </a></li>
-            </ul>
-        </div>
-        <div class="col-md-6 subscribe-right">
-            <h3 class="title">Leave Email for<br><span>Recommendations</span></h3>
-            <form action="#" method="post">
-                <input name="email" placeholder="Enter your Email..." required="" type="email">
-                <input type="submit" value="Send to Feat">
-                <div class="clearfix"></div>
-            </form>
-            <img alt="" class="sub-w3lsimg" src="img/i1.png"/>
-        </div>
-        <div class="clearfix"></div>
-    </div>
-</div>
-<!-- //subscribe -->
-<!-- footer -->
-<div class="footer agileits-w3layouts">
-    <div class="container">
-        <div class="w3_footer_grids">
-            <div class="col-xs-6 col-sm-3 footer-grids w3-agileits">
-                <h3>Group</h3>
-                <ul>
-                    <li><a href="about.php">About Us</a></li>
-                    <li><a href="contact.php">Contact Us</a></li>
-                    <li><a href="#">Feedbacks</a></li>
-                    <li><a href="help.php">Need Help</a></li>
-                </ul>
-            </div>
-            <div class="col-xs-6 col-sm-3 footer-grids w3-agileits">
-                <h3>help</h3>
-                <ul>
-                    <li><a href="help.php">FAQ</a></li>
-                    <li><a href="formBusinessman.php">Cancel Reservation</a></li> <!--Why?-->
-                    <li><a href="formBusinessman.php">Report</a></li>
-                </ul>
-            </div>
-            <div class="col-xs-6 col-sm-3 footer-grids w3-agileits">
-                <h3>Project info</h3>
-                <ul>
-                    <li><a href="http://www.cs.ucl.ac.uk/1819/a6u/t2/comp0034_web_development/">Moodle page</a></li>
-                    <li><a href="https://www.ucl.ac.uk/">About UCL</a></li>
-                    <li><a href="#">Project Report</a></li>
-                </ul>
-            </div>
-            <div class="col-xs-6 col-sm-3 footer-grids w3-agileits">
-                <h3>Other</h3>
-                <ul>
-                    <li><a href="#">Code</a></li>
-                    <li><a href="https://github.com/stevejuUCL/RestaurantReviewsGroupF.git">GitHub page</a></li>
-                </ul>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-    </div>
-</div>
 
-<!-- //footer -->
+<?php
+require_once('footer.php');
+?>
+
 
 <!-- Owl-Carousel-JavaScript -->
 <script src="js/owl.carousel.js"></script>
