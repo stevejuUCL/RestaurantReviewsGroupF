@@ -85,7 +85,7 @@ if ($userType == "businessman") {
                     </td>
                     <!-- form to cancel Reservation -->
                     <td class="cancelReservation">
-                        <form action='deleteReservation.php?name="<?php echo $reservation['ReservationID']; ?>"' method="post">
+                        <form action='deleteReservation.php' method="post">
                             <input type="hidden" name="reservationId" value="<?php echo $reservation['ReservationID']; ?>">
                             <button type="submit" class="btn" name="submit">Cancel</button>
                         </form>
@@ -100,7 +100,7 @@ if ($userType == "businessman") {
                                    value="<?php echo $reservation['ReservationID'] ?>"
 
                             <label><b>Date & Time</b></label>
-                            <input type="datetime-local" name="time" required>
+                            <input type="datetime-local" id="date_and_time" name="time" required>
 
                             <label><b>Number of people</b></label>
                             <input type="number" name="GuestNumber" required>
@@ -140,7 +140,7 @@ if ($userType == "businessman") {
                     </td>
                     <!-- form to cancel Reservation -->
                     <td class="cancelReservation">
-                        <form action='deleteReservation.php?name="<?php echo $reservation['ReservationID']; ?>"' method="post">
+                        <form action='deleteReservation.php' method="post">
                             <input type="hidden" name="reservationId" value="<?php echo $reservation['ReservationID']; ?>">
                             <button type="submit" class="btn" name="submit">Cancel</button>
                         </form>
@@ -198,3 +198,10 @@ else {
 }
 
 ?>
+
+<!--<form action="" method="get" onsubmit="">-->
+<!--    <h2>STEP 1: Choose date</h2>-->
+<!--    <h5 class="redcolour">We accept from today to 2 months from today.</h5><br>-->
+<!--    <input type="date" id="select_date" required><br><br>-->
+<!--    <button class="btn-secondary rounded btn-lg" onclick="date_validation();" type="button">OK</button>-->
+<!--</form>-->
