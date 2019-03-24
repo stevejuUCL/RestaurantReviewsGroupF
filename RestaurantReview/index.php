@@ -44,7 +44,7 @@
                             <a href="logInSelections.php"><i aria-hidden="true" class="fa fa-sign-in"></i> Login</a>
                         </li>
                         <li class="head-dpdn">
-                            <a href="logInSelections.php"><i aria-hidden="true" class="fa fa-user-plus"></i> Signup</a>
+                            <a href="signUpSelection.php"><i aria-hidden="true" class="fa fa-user-plus"></i> Signup</a>
                         </li>
                         <li class="head-dpdn">
                             <a href="help.php"><i aria-hidden="true" class="fa fa-question-circle"></i> Help</a>
@@ -97,7 +97,7 @@
         <div class="container">
             <h2>Make Easy to Find <br> <span>Best Restaurants For you.</span></h2>
             <div class="agileits_search">
-                <form action="#" method="post">
+                <form action="homepageSearch.php" method="post">
                     <input name="Search" placeholder="Search for your restaurant" required="" type="text">
                     <select id="agileinfo_search" name="agileinfo_search" required>
                         <option value="">Choose your location</option>
