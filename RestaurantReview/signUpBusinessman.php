@@ -17,8 +17,7 @@ require_once('header.php');
     <img class="login-w3img" src="../RestaurantReview/img/img3.jpg" alt="">
     <div class="container">
         <h3 class="w3ls-title w3ls-title1">Sign Up to your Customer account</h3>
-
-        <div class="login-agileinfo">
+            <div class="login-agileinfo">
             <h5 class="text-danger"><?php if (isset($_SESSION["error_message"])) {
                     echo $_SESSION["error_message"];
                     unset($_SESSION["error_message"]);
@@ -42,7 +41,7 @@ require_once('header.php');
                 <button type="submit" name="submit_button" value="businessman">Submit</button>
             </form>
             <p>Already have an account?  <a href="../HTMLfiles-noLongerUsed/loginBusinessman.html"> Login Now!</a></p>
-        </div>
+            </div>
     </div>
 </div>
 <!-- //sign up-page -->
