@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="MAMP Apache">
+  <component name="PublishConfigData" autoUpload="Always" serverName="RR@Local">
     <serverData>
-      <paths name="MAMP Apache">
+      <paths name="RR@Local">
         <serverdata>
           <mappings>
-            <mapping deploy="/RestaurantReview" local="$PROJECT_DIR$" web="/RestaurantReview" />
+            <mapping deploy="RestaurantReviewsGroupF" local="$PROJECT_DIR$" web="/RestaurantReviewsGroupF" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="ResR">
+        <serverdata>
+          <mappings>
+            <mapping deploy="RestaurantReviewsGroupF" local="$PROJECT_DIR$" web="/RestaurantReviewsGroupF" />
           </mappings>
         </serverdata>
       </paths>

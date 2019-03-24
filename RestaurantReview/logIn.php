@@ -2,7 +2,6 @@
 if ($_SERVER["REQUEST_METHOD"] != "POST") {
      header('location: logInSelections.php');
     } else {
-        require_once('header.php');
         require_once('PHP_Database/phpDatabaseConnection.php');
 
         $connection = connectToDb();

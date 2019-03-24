@@ -1,7 +1,8 @@
 <?php session_start();
 if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET["account_type"])) {
-    if ($_GET["account_type"] != "businessman" || $_GET["account_type"] != "restaurant") {
-        header('location: logInSelections.php');
+    if ($_GET["account_type"] != "businessman" && $_GET["account_type"] != "restaurant") {
+//        header('location: logInSelections.php');
+        echo $_GET["account_type"] . "something wrong";
     }else {
         require_once('header.php');
         ?>
@@ -43,7 +44,8 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET["account_type"])) {
         </div>
         <!-- //login-page -->
 
-    <?php }
+        <?php
+        require_once('footer.php');
+    }
 }
-require_once('footer.php');
 ?>
