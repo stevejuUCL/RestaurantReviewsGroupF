@@ -30,10 +30,7 @@ require_once ("header.php");
             <div class="work-info">
                 <h3>Reservation details:</h3>
             <?php
-            $conn = new mysqli("localhost", "steveju", "stevejuju546", "redwine");
-            if ($conn->connect_error) {
-                die("Connection failed: " . $conn->connect_error);
-            }
+            require_once('PHP_Database/phpDatabaseConnection.php');
             $query = "SELECT * FROM reservation_info where id = 1";
             $result = mysqli_query($conn, $query);
             while ($row = mysqli_fetch_array($result))
