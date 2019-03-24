@@ -77,7 +77,7 @@ session_start();
                         <ul class="nav navbar-nav navbar-right">
                             <li><a class="active" href="index.php">Home</a></li>
                             <li><a href="restaurants.php">Restaurants</a></li>
-                            <li><a href="../Duc'scode/reservations.php">Reservations</a></li>
+                            <li><a href="reservations.php">Reservations</a></li>
                             <li><a href="contact.php">Contact Us</a></li>
                         </ul>
                     </div>
