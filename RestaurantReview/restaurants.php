@@ -408,7 +408,7 @@ require_once('header.php');
                             </ul>
                         </div>
                         <br><br>
-                        <a href="#" class="w3ls-favorite w3ls-favoriate-like"></i> Make a reservation</a>
+                        <a href="#" class="w3ls-favorite w3ls-favoriate-like"> Make a reservation</a>
                         <div class="single-page-icons social-icons">
                             <ul>
                                 <li><h4>Share on</h4></li>
