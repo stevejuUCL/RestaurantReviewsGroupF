@@ -22,23 +22,6 @@
     <!-- Custom Stylesheets -->
     <link rel="stylesheet" href="css/style.css">
 </head>
-<style>
-    .form-popup {
-        display: none;
-    }
-    h1 {
-        padding: 30px;
-    }
-    h2 {
-        padding:15px;
-    }
-    button {
-        background-color: salmon;
-        text-align: center;
-        color: white;
-    }
-
-</style>
 <body>
 <!-- banner -->
 <div class="banner about-w3bnr">

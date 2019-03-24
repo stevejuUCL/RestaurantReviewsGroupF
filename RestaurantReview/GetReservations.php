@@ -11,6 +11,23 @@ if (!isset($_SESSION['user'])) {
 $current_user = $_SESSION['user'];
 
 ?>
+    <style>
+        .form-popup {
+            display: none;
+        }
+        h1 {
+            padding: 30px;
+        }
+        h2 {
+            padding:15px;
+        }
+        button {
+            background-color: salmon;
+            text-align: center;
+            color: white;
+        }
+
+    </style>
 <div class="container">
     <h1>My Reservations</h1>
     <br>

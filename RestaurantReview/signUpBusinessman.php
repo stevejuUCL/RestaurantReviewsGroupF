@@ -22,7 +22,7 @@ require_once('header.php');
                 <div class="wthreelogin-text">
                     <ul>
                         <li>
-                            <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>
+                            <label class="checkbox"><input type="checkbox" name="checkbox" required><i></i>
                                 <span> I agree to the terms of service</span>
                             </label>
                         </li>
