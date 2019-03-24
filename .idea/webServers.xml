@@ -3,7 +3,10 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="7a43ac0b-5736-4acd-b778-b18dd6ac9f7c" name="ResReview" url="http://localhost">
-        <fileTransfer port="0" mountedRoot="C:\xampp\htdocs" accessType="MOUNT" />
+        <fileTransfer port="0" mountedRoot="/Applications/MAMP/htdocs" accessType="MOUNT" />
+      </webServer>
+      <webServer id="35e406ab-e5dc-4c7f-b1bd-485d39c45513" name="MAMP Apache" url="http://localhost">
+        <fileTransfer port="0" mountedRoot="/Applications/MAMP/htdocs" accessType="MOUNT" />
       </webServer>
     </option>
   </component>
