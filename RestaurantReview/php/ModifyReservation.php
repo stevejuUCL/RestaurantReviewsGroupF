@@ -1,6 +1,6 @@
 
 <?php
-include_once('PHP_Database/phpDatabaseConnection.php');
+require_once('PHP_Database/phpDatabaseConnection.php');
 
 
 //get date and configure so that date format is compatible with SQL
