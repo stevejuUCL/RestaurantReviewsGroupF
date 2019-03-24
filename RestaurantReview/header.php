@@ -103,7 +103,7 @@
                                     </div>
                                 </ul>
                             </li>
-                            <li><a href="reservations.php">Reservations</a></li>
+                            <li><a href="../Duc'scode/reservations.php">Reservations</a></li>
                             <li><a href="contact.php">Contact Us</a></li>
                         </ul>
                     </div>

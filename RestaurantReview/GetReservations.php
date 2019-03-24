@@ -40,8 +40,8 @@ $current_user = $_SESSION['user'];
 
     // Build the query statement
     $query = "SELECT Restaurant.name, Restaurant.address, reservation.time, reservation.GuestNumber, reservation.ReservationID
-              FROM reservation JOIN Restaurant ON Reservation.RestaurantID = Restaurant.restaurantID WHERE `businessmanID` = '$current_user' ORDER BY reservation.time";
-              //WHERE businessman.ID = $businessmanID
+              FROM reservation JOIN Restaurant ON Reservation.RestaurantID = Restaurant.restaurantID 
+              WHERE `businessmanID` = '$current_user' OR 'restaurantID' = '$current_user' ORDER BY reservation.time";
 
     //echo $query;
 
@@ -74,8 +74,8 @@ if ($result) {
                     <td><button class="btn" onclick="getForm(<?php echo $reservation['ReservationID'] ?>)">Modify</button></td>
                     <!-- form to cancel Reservation -->
                     <td class="cancelReservation">
-                        <form action='cancelReservation.php?name="<?php echo $reservation['ReservationID']; ?>"' method="post">
-                            <input type="hidden" name="reservationId" value="<?php echo $reservation['ReservationID']; ?>">
+                        <form action='deleteReservations.php?name="<?php echo $reservation['ReservationID']; ?>"' method="post">
+                            <input type="hidden" name="reservationID" value="<?php echo $reservation['ReservationID'] ?>"
                             <button type="submit" class="btn" name="submit">Cancel</button>
                         </form>
                     </td>

@@ -1,7 +1,11 @@
-<title>Login</title>
-<?php
-require_once('header.php');
+<?php session_start();
+if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET["account_type"])) {
+    if ($_GET["account_type"] != "businessman" || $_GET["account_type"] != "restaurant") {
+        header('location: logInSelections.php');
+        }else {
+        require_once('header.php');
 ?>
+        <title>Log In</title>
 <!-- breadcrumb -->
 <div class="container">
     <ol class="breadcrumb w3l-crumbs">
@@ -14,11 +18,12 @@ require_once('header.php');
 <div class="login-page about">
     <img class="login-w3img" src="../RestaurantReview/img/img3.jpg" alt="">
     <div class="container">
-        <h3 class="title w3ls-title1">Login to your Restaurant Owner account</h3>
+        <h3 class="title w3ls-title1">Login to your <?= $_GET["account_type"] ?? "" ?> account</h3>
         <div class="login-agileinfo">
-            <form action="logInRestaurant.php" method="post">
-                <input class="agile-ltext" type="text" name="Username" placeholder="Username" required="">
+            <form action="logIn.php" method="post">
+                <input class="agile-ltext" type="text" name="username" placeholder="Username" required="">
                 <input class="agile-ltext" type="password" name="password" placeholder="Password" required="">
+                <input type="hidden" name="userType" value="<?= $_GET["account_type"] ?? "" ?>">
                 <div class="wthreelogin-text">
                     <ul>
                         <li>
@@ -32,12 +37,13 @@ require_once('header.php');
                 </div>
                 <input type="submit" value="LOGIN">
             </form>
-            <p>Wanna register your restaurant? <a href="signUpRestaurant.php"> Sign Up Now!</a></p>
+            <p>Don't have an Account? <a href="signUpBusinessman.php"> Sign Up Now!</a></p>
         </div>
     </div>
 </div>
 <!-- //login-page -->
 
-<?php
+<?php }
+}
 require_once('footer.php');
 ?>

@@ -1,7 +1,7 @@
 <?php session_start();
 require_once('PHP_Database/phpDatabaseConnection.php');
 
-
+//validation post
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $all_correct = true;
     $error_message = "";
@@ -67,6 +67,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($all_correct) {
         $qryCreate = "INSERT INTO users (username, email, password, userType) VALUES ('$username', '$email', '$password', '$userType')";
         mysqli_query($connection, $qryCreate);
+        $success_message = "Success! Please Log In to update your Account Information. <br>";
+        $_SESSION["success_message"] = $success_message;
+        header('Location: logInSelections.php?registered=true');
+        }
     } else {
         $_SESSION["error_message"] = $error_message;
         if ($userType == "businessman") {
@@ -76,6 +80,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
     }
-}
 
 

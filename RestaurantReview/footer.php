@@ -40,7 +40,7 @@
                 <h3>help</h3>
                 <ul>
                     <li><a href="help.php">FAQ</a></li>
-                    <li><a href="reservations.php">Cancel Reservation</a></li>
+                    <li><a href="../Duc'scode/reservations.php">Cancel Reservation</a></li>
                     <li><a href="contact.php">Report</a></li>
                 </ul>
             </div>

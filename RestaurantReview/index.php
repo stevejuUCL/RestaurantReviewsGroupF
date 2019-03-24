@@ -74,7 +74,7 @@
                         <ul class="nav navbar-nav navbar-right">
                             <li><a class="active" href="index.php">Home</a></li>
                             <li><a href="restaurants.php">Restaurants</a></li>
-                            <li><a href="reservations.php">Reservations</a></li>
+                            <li><a href="../Duc'scode/reservations.php">Reservations</a></li>
                             <li><a href="contact.php">Contact Us</a></li>
                         </ul>
                     </div>
@@ -119,14 +119,14 @@
     <div class="container">
         <div class="add-products-row">
             <div class="add-grids">
-                <a href="formBusinessman.php">
+                <a href="formLogIn.php">
                     <h4><span>Login here<br></span> if you are a <span>Customer</span></h4>
                     <h5>We prepared wonderful restaurants for you</h5>
                     <h6>Login Now <i aria-hidden="true" class="fa fa-arrow-circle-right"></i></h6>
                 </a>
             </div>
             <div class="add-grids add-grids-right">
-                <a href="formRestaurant.php">
+                <a href="formLogIn.php">
                     <h4><span>Login here<br></span> if you are a <span>Owner</span></h4>
                     <h5>Better way for business</h5>
                     <h6>Login Now <i aria-hidden="true" class="fa fa-arrow-circle-right"></i></h6>

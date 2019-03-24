@@ -2,11 +2,11 @@
 require_once('PHP_Database/phpDatabaseConnection.php');
 //$connection = connectToDb();
 
-    $Username = $_POST['Username'];
+    $username = $_POST['Username'];
     $password = $_POST['password'] ;
 
-$qryFindUser = "SELECT * From restaurant WHERE userName = '$Username'";
-$qryLogin = "SELECT * from restaurant WHERE userName = '$Username' AND password = '$password' ";
+$qryFindUser = "SELECT * From users WHERE userName = '$username'";
+$qryLogin = "SELECT * from users WHERE userName = '$username' AND password = '$password' ";
 $qryGetID = "SELECT restaurantID From restaurant WHERE userName = '$Username'";
 
 //Check if username exists
