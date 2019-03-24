@@ -393,7 +393,7 @@ require_once('header.php');
                                     <option value="11:00pm">11:00pm</option>
                                 </select>
                                 <select id="" name="people_choose" required>
-                                    <option value="">Choose your time</option>
+                                    <option value="">Choose table size</option>
                                     <option value="tableFor1">table for 1</option>
                                     <option value="tableFor2">table for 2</option>
                                     <option value="tableFor3">table for 3</option>
