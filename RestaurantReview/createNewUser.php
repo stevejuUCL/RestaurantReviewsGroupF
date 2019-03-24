@@ -41,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $error_message .= "Empty password confirm<br>";
     }
 
-    $userType = $_POST['submit_button'];
+    $userType = $_POST['userType'];
 
     $qryFindUsername = "SELECT * FROM users ";
     $qryFindUsername .= "WHERE username = '" . $username . "'";

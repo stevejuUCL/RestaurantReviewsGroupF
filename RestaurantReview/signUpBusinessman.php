@@ -1,23 +1,30 @@
 <?php session_start();
 require_once('header.php');
 ?>
+<title>Sign Up Businessman</title>
+<!-- breadcrumb -->
+<div class="container">
+    <ol class="breadcrumb w3l-crumbs">
+        <li><a href="index.php"><i class="fa fa-home"></i> Home</a></li>
+        <li class="active">Sign up</li>
+    </ol>
+</div>
+<!-- //breadcrumb -->
 <!-- sign up-page -->
-
 <div class="login-page about">
-    <img class="login-w3img" src="../RestaurantReview/img/img3.jpg" alt="">
+    <img class="login-w3img" src="img/img3.jpg" alt="">
     <div class="container">
-        <h3 class="w3ls-title w3ls-title1">Sign Up to your Customer account</h3>
-
+        <h3 class="title w3ls-title1">Sign Up to your Restaurant Owner Account</h3>
         <div class="login-agileinfo">
             <h5 class="text-danger"><?php if (isset($_SESSION["error_message"])) {
                     echo $_SESSION["error_message"];
                     unset($_SESSION["error_message"]);
                 }?></h5>
-            <form action="../RestaurantReview/createNewUser.php" method="post" name="NewUserForm" onsubmit="return validateForm(this)">   <!-- added PHP sign up form -->
-                <input class="agile-ltext" type="text" name="username" placeholder="Username" minlength="5"  required="">
+            <form action="createNewUser.php" method="post" onsubmit="return validateForm(this)">
+                <input class="agile-ltext" type="text" name="username" placeholder="Username" required="">
                 <input class="agile-ltext" type="email" name="email" placeholder="Your Email" required="">
-                <input class="agile-ltext" type="password" name="password" placeholder="Password" minlength="8"  required="">
-                <input class="agile-ltext" type="password" name="confirmPassword" placeholder="Confirm Password" minlength="8"  required="">
+                <input class="agile-ltext" type="password" name="password" placeholder="Password" required="">
+                <input class="agile-ltext" type="password" name="confirmPassword" placeholder="Confirm Password" required="">
                 <input class="agile-ltext" type="hidden" name="userType" value="businessman">
                 <div class="wthreelogin-text">
                     <ul>
@@ -29,14 +36,13 @@ require_once('header.php');
                     </ul>
                     <div class="clearfix"> </div>
                 </div>
-                <button type="submit" name="submit_button" value="businessman">Submit</button>
+                <button type="submit" value="submit_button">Sign Up!</button>
             </form>
-            <p>Already have an account?  <a href="../HTMLfiles-noLongerUsed/loginBusinessman.html"> Login Now!</a></p>
+            <p>Already have an account?  <a href="../HTMLfiles-noLongerUsed/loginRestaurantOwner.html"> Login Now!</a></p>
         </div>
     </div>
 </div>
 <!-- //sign up-page -->
-
 <!-- validate user input to signup form -->
 <script type="text/javascript">
 

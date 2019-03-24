@@ -1,12 +1,12 @@
-<title>Signup</title>
-<?php
+<?php session_start();
 require_once('header.php');
 ?>
+<title>Sign Up Restaurant</title>
 <!-- breadcrumb -->
 <div class="container">
     <ol class="breadcrumb w3l-crumbs">
         <li><a href="index.php"><i class="fa fa-home"></i> Home</a></li>
-        <li class="active">Signup</li>
+        <li class="active">Sign up</li>
     </ol>
 </div>
 <!-- //breadcrumb -->
@@ -14,7 +14,7 @@ require_once('header.php');
     <div class="login-page about">
         <img class="login-w3img" src="img/img3.jpg" alt="">
         <div class="container">
-            <h3 class="title w3ls-title1">Sign Up to your Restaurant Owner account</h3>
+            <h3 class="title w3ls-title1">Sign Up to your Businessman Account</h3>
             <div class="login-agileinfo">
                 <h5 class="text-danger"><?php if (isset($_SESSION["error_message"])) {
                         echo $_SESSION["error_message"];
@@ -36,7 +36,7 @@ require_once('header.php');
                         </ul>
                         <div class="clearfix"> </div>
                     </div>
-                    <button type="submit_button" value="Sign Up">
+                    <button type="submit" value="submit_button">Sign Up!</button>
                 </form>
                 <p>Already have an account?  <a href="../HTMLfiles-noLongerUsed/loginRestaurantOwner.html"> Login Now!</a></p>
             </div>
