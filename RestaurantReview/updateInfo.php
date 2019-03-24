@@ -2,6 +2,7 @@
 require_once('PHP_Database/phpDatabaseConnection.php');
 require_once('header.php');
 
+
 // loop if check from database if user exist in corerect table
 // if true >> $exist = true;
 // else >> $exist = false;
@@ -23,7 +24,9 @@ require_once('header.php');
     <img class="login-w3img" src="../RestaurantReview/img/img3.jpg" alt="">
     <div class="container">
         <h3 class="title w3ls-title1">Display Account Information</h3>
-        <?php //if(!$exist) {?>
+        <?php
+        $queryFind = "SELECT user FROM businessman";
+        //if(!$exist) {?>
         <div class="account-agileinfo">
             <form action="updateInfo.php" method="post">
                 <input class="agile-ltext" type="hidden" name="userID" value="<?php $_SESSION['user']?>"

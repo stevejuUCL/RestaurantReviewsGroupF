@@ -1,15 +1,15 @@
 <?php session_start();
 require_once('header.php');
 ?>
-<title>Sign Up Restaurant</title>
-<!-- breadcrumb -->
-<div class="container">
-    <ol class="breadcrumb w3l-crumbs">
-        <li><a href="index.php"><i class="fa fa-home"></i> Home</a></li>
-        <li class="active">Sign up</li>
-    </ol>
-</div>
-<!-- //breadcrumb -->
+    <title>Sign Up Restaurant</title>
+    <!-- breadcrumb -->
+    <div class="container">
+        <ol class="breadcrumb w3l-crumbs">
+            <li><a href="index.php"><i class="fa fa-home"></i> Home</a></li>
+            <li class="active">Sign up</li>
+        </ol>
+    </div>
+    <!-- //breadcrumb -->
     <!-- sign up-page -->
     <div class="login-page about">
         <img class="login-w3img" src="img/img3.jpg" alt="">
