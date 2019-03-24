@@ -1,0 +1,195 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+}
+
+.navBar input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 15px;
+    margin-right: 15px;
+    font-size: 17px;
+    height: 30px;
+    width: 350px;
+}
+
+.navBar a.other {
+    float: right;
+    color: #f2f2f2;
+    border: none;
+    margin-top: 17px;
+    margin-right: 30px;
+    font-size: 20px;
+}
+
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+    .navBar a.logo, .navBar input[type=text], .navBar a.other {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+
+    .navBar input[type=text] {
+        border: 1px solid #ccc;
+    }
+}
+
+.mySlides {
+    display: block;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    height: 5px;
+    width: 5px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px
+    }
+}
+
+.searchBackground {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.searchBar {
+    position: absolute;
+    width: 600px;
+    height: 50px;
+    top: 260px;
+    left: 47%;
+    transform: translate(-50%, -50%);
+}
+.searchBar:hover{
+    color: #dc3545;
+    border-color:#dc3545;
+    box-shadow: 1px 1px 1px 3px #dc3545;
+}
+
+.searchButton {
+    position: absolute;
+    width: 7em;
+    height: 50px;
+    top: 260px;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+
+.searchButton:hover{
+    color: #dc3545;
+    background-color: #ffffff;
+    border-color: #dc3545;
+}
+
+
+.btn-outline-homemade1 {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.btn-outline-homemade1:hover {
+    color: #dc3545;
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+.btn-outline-homemade1.focus, .btn-outline-homemade1:focus {
+    box-shadow: 0 0 0 .2rem rgba(255, 255, 255, .5)
+}
+
+.navItem{
+    color: #ffffff;
+    margin-left: 2em;
+}
+
+.navItem:hover{
+    color: #000000;
+    text-decoration: none;
+}
+
+.title{
+    color: #dc3545;
+    text-align: center;
+}
+
+.single-member{width: 20%; float: left; background-color: #fff; text-align: center; position: relative;}
+.member-image img{max-width: 100%; vertical-align: middle;}
+.social-touch a{display: inline-block; width: 27px; height: 26px; vertical-align: middle; margin: 0 2px; background-image: url(../img/social-icons.png); background-repeat: no-repeat; opacity: 0.7; transition: 0.3s;}
+.social-touch a:hover{opacity: 1; transition: 0.3s;}
+.fb-touch{background-position: 0 0;}
+.tweet-touch{background-position: -35px 0;}
+.linkedin-touch{background-position: -71px 0;}
+.icon-colored .fb-touch{background-position: 0 -27px;}
+.icon-colored .tweet-touch{background-position: -35px -27px;}
+.icon-colored .linkedin-touch{background-position: -71px -27px;}
+
+
+.typeEffect{max-height: 302px; min-height: 302px; overflow: hidden;}
+.typeEffect h3{padding-top: 7px; line-height: 33px;}
+.typeEffect .member-image{border-bottom: 5px solid #dc3545; height: 212px; overflow: hidden; width: 100%; transition: 0.4s; display: inline-block; float: none; vertical-align: middle;}
+.typeEffect .member-info{transition: 0.4s;}
+.typeEffect .member-image img{width: 100%; vertical-align: bottom;}
+.typeEffect .social-touch{background-color: #ffc107; float: left; left: 0; bottom: 0; overflow: hidden; padding: 5px 0; width: 100%; transition: 0.4s;}
+.typeEffect:hover .member-image{height: 81px; transition: 0.4s;}
