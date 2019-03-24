@@ -8,7 +8,6 @@
     <script type="application/x-javascript"> addEventListener("load", function () {
             setTimeout(hideURLbar, 0);
         }, false);
-
         function hideURLbar() {
             window.scrollTo(0, 1);
         } </script>
@@ -45,7 +44,7 @@
                             <a href="logInSelections.php"><i aria-hidden="true" class="fa fa-sign-in"></i> Login</a>
                         </li>
                         <li class="head-dpdn">
-                            <a href="logInSelections.php"><i aria-hidden="true" class="fa fa-user-plus"></i> Signup</a>
+                            <a href="signUpSelection.php"><i aria-hidden="true" class="fa fa-user-plus"></i> Signup</a>
                         </li>
                         <li class="head-dpdn">
                             <a href="help.php"><i aria-hidden="true" class="fa fa-question-circle"></i> Help</a>
@@ -74,41 +73,7 @@
                     <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
                         <ul class="nav navbar-nav navbar-right">
                             <li><a class="active" href="index.php">Home</a></li>
-                            <!-- Mega Menu -->
-                            <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Restaurants <b
-                                            class="caret"></b></a>
-                                <ul class="dropdown-menu multi-column columns-3">
-                                    <div class="row">
-                                        <div class="col-sm-4">
-                                            <ul class="multi-column-dropdown">
-                                                <h6>Food type</h6>
-                                                <li><a href="restaurants.php">Breakfast</a></li>
-                                                <li><a href="restaurants.php">Lunch</a></li>
-                                                <li><a href="restaurants.php">Dinner</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <ul class="multi-column-dropdown">
-                                                <h6>Cuisine</h6>
-                                                <li><a href="restaurants.php">Chinese Food</a></li>
-                                                <li><a href="restaurants.php">American Food</a></li>
-                                                <li><a href="restaurants.php">French Food</a></li>
-                                                <li><a href="restaurants.php">Italian Food</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <ul class="multi-column-dropdown">
-                                                <h6>Reservation type</h6>
-                                                <li><a href="restaurants.php">For Single Person</a></li>
-                                                <li><a href="restaurants.php">For Couples</a></li>
-                                                <li><a href="restaurants.php">For Groups</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                </ul>
-                            </li>
+                            <li><a href="restaurants.php">Restaurants</a></li>
                             <li><a href="reservations.php">Reservations</a></li>
                             <li><a href="contact.php">Contact Us</a></li>
                         </ul>
@@ -132,7 +97,7 @@
         <div class="container">
             <h2>Make Easy to Find <br> <span>Best Restaurants For you.</span></h2>
             <div class="agileits_search">
-                <form action="#" method="post">
+                <form action="homepageSearch.php" method="post">
                     <input name="Search" placeholder="Search for your restaurant" required="" type="text">
                     <select id="agileinfo_search" name="agileinfo_search" required>
                         <option value="">Choose your location</option>
@@ -336,73 +301,11 @@
     </div>
 </div>
 <!-- //dishes -->
-<!-- subscribe -->
-<div class="subscribe agileits-w3layouts">
-    <div class="container">
-        <div class="col-md-6 social-icons w3-agile-icons">
-            <h4>Keep in touch</h4>
-            <ul>
-                <li><a class="fa fa-facebook icon facebook" href="#"> </a></li>
-                <li><a class="fa fa-twitter icon twitter" href="#"> </a></li>
-                <li><a class="fa fa-google-plus icon googleplus" href="#"> </a></li>
-                <li><a class="fa fa-weibo icon fa-weibo" href="#"> </a></li>
-            </ul>
-        </div>
-        <div class="col-md-6 subscribe-right">
-            <h3 class="title">Leave Email for<br><span>Recommendations</span></h3>
-            <form action="#" method="post">
-                <input name="email" placeholder="Enter your Email..." required="" type="email">
-                <input type="submit" value="Send to Feat">
-                <div class="clearfix"></div>
-            </form>
-            <img alt="" class="sub-w3lsimg" src="img/i1.png"/>
-        </div>
-        <div class="clearfix"></div>
-    </div>
-</div>
-<!-- //subscribe -->
-<!-- footer -->
-<div class="footer agileits-w3layouts">
-    <div class="container">
-        <div class="w3_footer_grids">
-            <div class="col-xs-6 col-sm-3 footer-grids w3-agileits">
-                <h3>Group</h3>
-                <ul>
-                    <li><a href="about.php">About Us</a></li>
-                    <li><a href="contact.php">Contact Us</a></li>
-                    <li><a href="#">Feedbacks</a></li>
-                    <li><a href="help.php">Need Help</a></li>
-                </ul>
-            </div>
-            <div class="col-xs-6 col-sm-3 footer-grids w3-agileits">
-                <h3>help</h3>
-                <ul>
-                    <li><a href="help.php">FAQ</a></li>
-                    <li><a href="formBusinessman.php">Cancel Reservation</a></li> <!--Why?-->
-                    <li><a href="formBusinessman.php">Report</a></li>
-                </ul>
-            </div>
-            <div class="col-xs-6 col-sm-3 footer-grids w3-agileits">
-                <h3>Project info</h3>
-                <ul>
-                    <li><a href="http://www.cs.ucl.ac.uk/1819/a6u/t2/comp0034_web_development/">Moodle page</a></li>
-                    <li><a href="https://www.ucl.ac.uk/">About UCL</a></li>
-                    <li><a href="#">Project Report</a></li>
-                </ul>
-            </div>
-            <div class="col-xs-6 col-sm-3 footer-grids w3-agileits">
-                <h3>Other</h3>
-                <ul>
-                    <li><a href="#">Code</a></li>
-                    <li><a href="https://github.com/stevejuUCL/RestaurantReviewsGroupF.git">GitHub page</a></li>
-                </ul>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-    </div>
-</div>
 
-<!-- //footer -->
+<?php
+require_once('footer.php');
+?>
+
 
 <!-- Owl-Carousel-JavaScript -->
 <script src="js/owl.carousel.js"></script>

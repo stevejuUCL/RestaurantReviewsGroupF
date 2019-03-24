@@ -390,9 +390,9 @@ require_once('header.php');
                             <input type="hidden" name="add" value="1" />
                             <input type="hidden" name="w3ls_item" value="France Special" />
                             <input type="hidden" name="amount" value="18.00" />
-                            <button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+                            <button type="submit" class="w3ls-favorite" ><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
                         </form>
-                        <a href="#" class="w3ls-cart w3ls-cart-like"><i class="fa fa-heart-o" aria-hidden="true"></i> Add to Wishlist</a>
+                        <a href="#" class="w3ls-favorite w3ls-favoriate-like"><i class="fa fa-heart-o" aria-hidden="true"></i> Add to Wishlist</a>
                         <div class="single-page-icons social-icons">
                             <ul>
                                 <li><h4>Share on</h4></li>

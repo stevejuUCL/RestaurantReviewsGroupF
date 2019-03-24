@@ -4,7 +4,8 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
     <meta content="" name="keywords" />
-    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+    function hideURLbar(){ window.scrollTo(0,1); } </script>
     <!-- Custom Theme files -->
     <link href="../RestaurantReview/css/bootstrap.css" media="all" rel="stylesheet" type="text/css">
     <link href="../RestaurantReview/css/style.css" media="all" rel="stylesheet" type="text/css">

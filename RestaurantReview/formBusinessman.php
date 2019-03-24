@@ -16,7 +16,7 @@ require_once('header.php');
     <div class="container">
         <h3 class="title w3ls-title1">Login to your Customer account</h3>
         <div class="login-agileinfo">
-            <form action="../RestaurantReview/businessmanLogin.php" method="post">
+            <form action="businessmanLogin.php" method="post">
                 <input class="agile-ltext" type="text" name="Username" placeholder="Username" required="">
                 <input class="agile-ltext" type="password" name="password" placeholder="Password" required="">
                 <div class="wthreelogin-text">
