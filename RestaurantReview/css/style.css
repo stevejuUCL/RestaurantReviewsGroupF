@@ -1,30 +1,30 @@
 body{
-	margin:0; 
-	font-family: 'Yantramanav', sans-serif;
-	background: #fff;  
+    margin:0;
+    font-family: 'Yantramanav', sans-serif;
+    background: #fff;
 }
 body a{
-	transition: 0.5s all;
-	-webkit-transition: 0.5s all;
-	-moz-transition: 0.5s all;
-	-o-transition: 0.5s all;
-	-ms-transition: 0.5s all;
-	text-decoration:none;
-	outline:none;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    text-decoration:none;
+    outline:none;
 }
 h1,h2,h3,h4,h5,h6{
-	margin:0;
-	font-family: 'Berkshire Swash', cursive;
+    margin:0;
+    font-family: 'Berkshire Swash', cursive;
 }
 p{
-	margin:0;
+    margin:0;
 }
 ul,label{
-	margin:0;
-	padding:0;
+    margin:0;
+    padding:0;
 }
 body a:hover{
-	text-decoration:none;
+    text-decoration:none;
 }
 body a:focus {
     outline: none;
@@ -35,7 +35,7 @@ body a:focus {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    -ms-background-size: cover; 
+    -ms-background-size: cover;
 }
 /*-- header --*/
 .w3ls-header {
@@ -61,30 +61,30 @@ body a:focus {
     color: #fff;
     font-weight: 200;
 }
-.w3ls-header-right ul li a{ 
-	color: #fff;
-	outline:none;
-	-webkit-transition:.5s all;
-	-moz-transition:.5s all;
-	-o-transition:.5s all;
-	-ms-transition:.5s all;
-	transition:.5s all;
-} 
-.w3ls-header-right ul li a:hover{ 
-	color: #fd463e;
-	outline:none;
-} 
+.w3ls-header-right ul li a{
+    color: #fff;
+    outline:none;
+    -webkit-transition:.5s all;
+    -moz-transition:.5s all;
+    -o-transition:.5s all;
+    -ms-transition:.5s all;
+    transition:.5s all;
+}
+.w3ls-header-right ul li a:hover{
+    color: #fd463e;
+    outline:none;
+}
 .w3ls-header-right ul li i.fa {
     margin-right: 5px;
 }
-/*-- //header --*/  
+/*-- //header --*/
 /*-- logo --*/
 .w3l_logo h1 {
     font-size: 4em;
     color: #fff;
     font-weight: 200;
 }
-.w3l_logo h1 a { 
+.w3l_logo h1 a {
     color: #fff;
     text-decoration: none;
 }
@@ -97,7 +97,7 @@ body a:focus {
     margin-top:0.4em;
     font-family: 'Yantramanav', sans-serif;
     font-weight: 400;
-} 
+}
 /*-- logo --*/
 .tlinks{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
 /*-- navigation --*/
@@ -105,8 +105,8 @@ body a:focus {
     padding: 0 0 0.6em;
     text-align: center;
     background: rgba(253, 70, 62, 0.84);
-	position: relative;
-} 
+    position: relative;
+}
 .w3ls_products_pos h4 {
     font-size: 2em;
     text-align: right;
@@ -122,7 +122,7 @@ li.w3pages .dropdown-menu > li > a {
     color: #999;
     font-size: .9em;
     padding: 5px 18px;
-	text-transform: uppercase;
+    text-transform: uppercase;
 }
 li.w3pages ul.dropdown-menu {
     left: 3%;
@@ -130,15 +130,15 @@ li.w3pages ul.dropdown-menu {
     min-width: 120px;
 }
 li.w3pages .dropdown-menu > li > a:hover,li.w3pages .dropdown-menu > li > a.active{
-    color: #000; 
+    color: #000;
 }
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-    color: #3d3246; 
+    color: #3d3246;
 }
 ul.nav.navbar-nav.navbar-right {
     margin: 2em 3em 0 0;
 }
-.navbar-nav > li { 
+.navbar-nav > li {
     margin: 0 1em;
 }
 .navbar-default .navbar-nav > li > a {
@@ -301,10 +301,10 @@ option {
 /*-- //search --*/
 /*-- //banner-text --*/
 /*-- add-products --*/
-.add-products,.wthree-order,.w3agile-deals,.w3agile-spldishes,.wthree-menu,.products,.about,.contact,.codes{
+.add-restaurants,.wthree-order,.w3agile-deals,.w3agile-spldishes,.wthree-menu,.products,.about,.contact,.codes{
     padding: 5em 0; 
 }
-.add-products{  
+.add-restaurants{
 	background: -webkit-linear-gradient(to bottom, #f1efef 51%,#00BCD4 125%);
 	background: -moz-linear-gradient(to bottom, #f1efef 51%,#00BCD4 125%);
 	background: -o-linear-gradient(to bottom, #f1efef 51%,#00BCD4 125%);
@@ -312,24 +312,24 @@ option {
 	/*background: -ms-gradient(to bottom, #f1efef 51%,#00BCD4 125%);*/
 	background: linear-gradient(to bottom, #f1efef 51%,#00BCD4 125%);
 }
-.w3ls-add-grids {
+.add-grids {
     background: url(../img/img1.jpg)no-repeat 0px 0px;
     background-size: cover;
     width: 45%; 
     float: left;
     margin: 0 0 0 2.5em;
 }
-.w3ls-add-grids.w3ls-add-grids-right{
+.add-grids.add-grids-right{
     background: url(../img/img2.jpg)no-repeat 0px 0px;
 	background-size: cover;
 	text-align: right;
 } 
-.w3ls-add-grids a {
+.add-grids a {
     display: block;
     padding: 2em; 
     background: rgba(0, 0, 0, 0.56); 
 }
-.w3ls-add-grids a h4 {
+.add-grids a h4 {
     font-size: 1.5em;
     color: #e8ff00;
     letter-spacing: 2px;
@@ -339,12 +339,12 @@ option {
     line-height: 2.2em;
     font-family: 'Yantramanav', sans-serif;
 }
-.w3ls-add-grids a h4 span {
+.add-grids a h4 span {
     font-size: 2.5em;
     font-weight: 100;
     text-transform: uppercase;
 }
-.w3ls-add-grids a h5{
+.add-grids a h5{
     font-size: 1.1em;
     color: #fff;
     letter-spacing: 2px;
@@ -353,7 +353,7 @@ option {
     padding: 8px;
     margin-top: 1em;
 }
-.w3ls-add-grids a h6 {
+.add-grids a h6 {
     font-size: 1.2em;
     color: #fff;
     margin: 2em 0 1em;
@@ -431,7 +431,7 @@ p {
     color: #999;
     line-height: 1.8em;
 }
-h3.w3ls-title {
+h3.title {
     font-size: 3em;
     color: #212121;
     text-align: center;
@@ -456,7 +456,7 @@ img.w3order-img {
     background:url(../img/1.jpg)no-repeat center 0px fixed;
 	background-size: cover; 
 }
-.w3agile-deals h3.w3ls-title {
+.w3agile-deals h3.title {
     color: #fff;
 }
 .deals-left,.deals-right  {
@@ -603,7 +603,7 @@ img.w3order-img {
     padding: 3em 0;
     background: rgb(255, 233, 232);
 }
-.subscribe-right h3.w3ls-title {
+.subscribe-right h3.title {
     text-align: right;
     text-transform: capitalize;
     line-height: 1.4em;
@@ -901,7 +901,7 @@ ol.breadcrumb.w3l-crumbs {
     color: #fff;
     z-index: 9;
 }
-h3.w3ls-title.w3ls-title1 {
+h3.title.w3ls-title1 {
     margin-bottom: 1.5em;
 }
 .w3spl-menu {
@@ -1708,7 +1708,7 @@ p.single-price-text {
 } 
 /*-- //modal --*/
 /*-- about --*/ 
-.history h3.w3ls-title {
+.history h3.title {
     font-size: 1.8em;
     margin: 2em 0 0.5em;
     text-align: left;
@@ -2705,7 +2705,7 @@ img.w3order-img {
 }
 }
 @media(max-width:1080px){
-.w3l_logo h1 {
+.logo h1 {
     font-size: 3.6em; 
 }
 ul.nav.navbar-nav.navbar-right {
@@ -2732,7 +2732,7 @@ ul.nav.navbar-nav.navbar-right {
 .social-icons.w3-agile-icons {
     margin-top: 2em;
 }
-.subscribe-right h3.w3ls-title{
+.subscribe-right h3.title{
     font-size: 2.5em; 
 }
 .subscribe input[type="email"] {
@@ -2778,7 +2778,7 @@ img.w3order-img {
 .agile-dish-caption { 
     padding: 2em 0.5em; 
 } 
-h3.w3ls-title.w3ls-title1 {
+h3.title.w3ls-title1 {
     margin-bottom: 1.2em;
 }
 .ftr-top-grids {
@@ -2825,7 +2825,7 @@ h3.w3ls-title.w3ls-title1 {
 .offers-wthreerow2 {
     margin: 4em 0 1em;
 }
-.w3ls-add-grids a h4 span {
+.add-grids a h4 span {
     font-size: 2.2em; 
 }
 .banner.about-w3bnr .banner-text h2 {
@@ -2837,7 +2837,7 @@ h3.w3ls-title.w3ls-title1 {
 }
 }
 @media(max-width:1024px){
-.w3l_logo h1 {
+.logo h1 {
     font-size: 3.4em;
 }
 ul.nav.navbar-nav.navbar-right {
@@ -2853,20 +2853,20 @@ ul.nav.navbar-nav.navbar-right {
     width: 75%;
     margin: 1.5em 0 0;
 }
-.w3ls-add-grids a h4 span {
+.add-grids a h4 span {
     font-size: 2em;
 }
-.w3ls-add-grids a h4 { 
+.add-grids a h4 {
     padding-top: 0em; 
 	font-size: 1.2em;
 }
-.w3ls-add-grids a h6 { 
+.add-grids a h6 {
     margin: 1.5em 0 0; 
 }
-.w3ls-add-grids a h5 {
+.add-grids a h5 {
     font-size: 1em; 
 }
-.add-products, .wthree-order, .w3agile-deals, .w3agile-spldishes, .wthree-menu, .products, .about, .contact, .codes {
+.add-restaurants, .wthree-order, .w3agile-deals, .w3agile-spldishes, .wthree-menu, .products, .about, .contact, .codes {
     padding: 4em 0;
 }
 p.w3lsorder-text {
@@ -2875,7 +2875,7 @@ p.w3lsorder-text {
 .spldishes-w3left {
     padding: 3em 2em;
 }
-.subscribe-right h3.w3ls-title {
+.subscribe-right h3.title {
     font-size: 2.2em;
 }
 .dropdown-menu.columns-3 { 
@@ -2888,7 +2888,7 @@ p.w3lsorder-text {
 #staplesbmincart {
     width: 358px; 
 }
-h3.w3ls-title {
+h3.title {
     font-size: 2.6em; 
 }
 p.w3lsorder-text { 
@@ -2921,7 +2921,7 @@ p.w3lsorder-text {
 } 
 }
 @media(max-width:991px){
-.w3ls-header-right ul li { 
+.header-right ul li {
     padding: 0 0.5em;
     font-size: 0.9em; 
 }
@@ -2931,11 +2931,11 @@ p.w3lsorder-text {
 .agileits_search {
     width: 85%; 
 }
-.w3ls-add-grids { 
+.add-grids {
     width: 46%; 
     margin: 0 1em;
 }
-.w3ls-add-grids a h6 {
+.add-grids a h6 {
     font-size: 1em; 
     letter-spacing: 8px; 
 }
@@ -3012,14 +3012,14 @@ p.w3lsorder-text {
 .ftr-top-right { 
     width: 90%;
 }
-.history h3.w3ls-title {
+.history h3.title {
     font-size: 1.6em; 
 	margin: 1em 0 0.5em;
 }
 .login-agileinfo {
     width: 60%;
 }
-.w3ls-add-grids a h6 { 
+.add-grids a h6 {
     letter-spacing: 5px;
 }
 .help h5, .privacy-w3row h5 { 
@@ -3083,20 +3083,20 @@ p.single-price-text {
 .w3spl-menu { 
     padding-top: 3em;
 }
-.w3ls-add-grids a h4 span {
+.add-grids a h4 span {
     font-size: 1.5em;
 }
-.w3ls-add-grids a h5 {
+.add-grids a h5 {
     font-size: 0.9em;
     letter-spacing: 1px;
 }
-.w3ls-add-grids a h6 {
+.add-grids a h6 {
     margin: 1em 0 0;
 }
 .banner.about-w3bnr .banner-text h2 {
     font-size: 2.3em;
 }
-h3.w3ls-title.w3ls-title1 {
+h3.title.w3ls-title1 {
     margin-bottom: 1em;
 }
 .contact-w3lsright h6 {
@@ -3138,7 +3138,7 @@ h3.w3ls-title.w3ls-title1 {
     font-size: 1.2em; 
     letter-spacing: 2px;
 }
-.subscribe-right h3.w3ls-title {
+.subscribe-right h3.title {
     font-size: 1.9em;
 }
 .help-search input[type="search"] { 
@@ -3167,7 +3167,7 @@ h3.w3ls-title.w3ls-title1 {
 }
 }
 @media(max-width:768px){
-.w3l_logo h1 {
+.logo h1 {
     font-size: 3em;
 }
 .navbar-default .navbar-nav > li > a { 
@@ -3194,7 +3194,7 @@ ul.nav.navbar-nav.navbar-right {
     font-size: 4em;
     padding: 0.6em 0;
 }
-.add-products, .wthree-order, .w3agile-deals, .w3agile-spldishes, .wthree-menu, .products, .about, .contact, .codes {
+.add-restaurants, .wthree-order, .w3agile-deals, .w3agile-spldishes, .wthree-menu, .products, .about, .contact, .codes {
     padding: 3em 0;
 }
 .dropdown-menu.columns-3 {
@@ -3212,7 +3212,7 @@ ul.multi-column-dropdown h6 {
 .navbar-right .dropdown-menu {
     top: 164%;
 }
-h3.w3ls-title {
+h3.title {
     font-size: 2.4em;
 }
 h3.icon-subheading {
@@ -3232,14 +3232,14 @@ h3.icon-subheading {
 } 
 }
 @media(max-width:767px){
-.w3ls-header-left p {
+.header-left p {
     font-size: 0.8em; 
     letter-spacing: 0;
 }
 .agileits_search form {
     border: 20px solid rgba(0, 0, 0, 0.55);
 }
-.w3ls-add-grids {
+.add-grids {
     width: 45%; 
 }
 .order-w3lsgrids:nth-child(3),.order-w3lsgrids:nth-child(4){
@@ -3248,23 +3248,23 @@ h3.icon-subheading {
 .footer-grids.w3-agileits:nth-child(3),.footer-grids.w3-agileits:nth-child(4) {
     margin-top: 2em;
 }
-.w3ls-add-grids a { 
+.add-grids a {
     padding: 1.5em; 
 }
 .footer-grids h3 {
     font-size: 1.4em; 
     margin-bottom: 0.8em; 
 }
-.navbar-header.w3l_logo { 
+.navbar-header.logo {
     width: 55%; 
 }
-.w3l_logo h1 {
+.logo h1 {
     font-size: 2.5em;
 }
-.w3l_logo h1,.w3l_logo h1 a span{ 
+.logo h1,.logo h1 a span{
     text-align: left;
 }
-.w3l_logo h1 a span { 
+.logo h1 a span {
     font-size: .25em; 
     letter-spacing: 1px; 
     margin-top: 0.8em; 
@@ -3350,12 +3350,12 @@ ul.dropdown-menu.multi-column.columns-3, li.w3pages.open .dropdown-menu {
 } 
 }
 @media(max-width:667px){
-.w3ls-header-left,.w3ls-header-right{
+.header-left,.header-right{
     float: none;
     width: 100%;
     text-align: center;
 }
-.w3ls-header-right {
+.header-right {
     margin-top: .5em;
 } 
 .banner-text h2 {
@@ -3379,21 +3379,21 @@ ul.dropdown-menu.multi-column.columns-3, li.w3pages.open .dropdown-menu {
 .agileits_search {
     width: 87%;
 }
-.w3ls-add-grids a h4 span {
+.add-grids a h4 span {
     font-size: 1.2em;
 }
-.w3ls-add-grids a h4 { 
+.add-grids a h4 {
     line-height: 1.7em; 
 }
-.w3ls-add-grids a h5 {
+.add-grids a h5 {
     font-size: 0.85em;
     letter-spacing: 0px;
 }
-.w3ls-add-grids a h6 {
+.add-grids a h6 {
     letter-spacing: 2px;
     font-size: 0.9em;
 }
-h3.w3ls-title {
+h3.title {
     font-size: 2em;
 } 
 .flip-container, .back, .flip-container.flip-container1, .flip-container1 .back {
@@ -3432,7 +3432,7 @@ h3.w3ls-title {
     width: 93%;
     left: 3%;
 }
-.subscribe-right h3.w3ls-title {
+.subscribe-right h3.title {
     font-size: 1.6em;
 }
 .subscribe input[type="email"] { 
@@ -3527,7 +3527,7 @@ h3.w3ls-title {
 #staplesbmincart {
     left: 41%; 
 }
-.navbar-header.w3l_logo {
+.navbar-header.logo {
     width: 56%;
 }
 .agileits_search input[type="text"] {
@@ -3536,7 +3536,7 @@ h3.w3ls-title {
 #agileinfo_search {
     width: 27%;
 }
-.w3ls-add-grids a h6 { 
+.add-grids a h6 {
     font-size: 0.8em;
 }
 p.w3lsorder-text {
@@ -3545,12 +3545,12 @@ p.w3lsorder-text {
 .contact-w3lsright h6 {
     margin-top: 0.8em;
 }
-.w3ls-header-right ul li {
+.header-right ul li {
     padding: 0 0.8em; 
 }
 }
 @media(max-width:600px){
-.w3ls-add-grids {
+.add-grids {
     width: 47%;
     margin: 0 0.5em;
 }
@@ -3620,7 +3620,7 @@ img.w3order-img {
 }
 }
 @media(max-width:480px){
-.w3ls-header-right ul li {
+.header-right ul li {
     padding: 0 0.5em;
 }
 .navbar-toggle {
@@ -3635,7 +3635,7 @@ img.w3order-img {
 #agileinfo_search {
     width: 35%;
 }
-.w3ls-add-grids {
+.add-grids {
     width: 46.5%; 
 }
 .order-w3text i.fa {
@@ -3742,7 +3742,7 @@ p {
 .contact input[type="submit"] {
     padding: .6em 3em; 
 }
-.add-products, .wthree-order, .w3agile-deals, .w3agile-spldishes, .wthree-menu, .products, .about, .contact, .codes {
+.add-restaurants, .wthree-order, .w3agile-deals, .w3agile-spldishes, .wthree-menu, .products, .about, .contact, .codes {
     padding: 2.5em 0;
 }
 .login-agileinfo {
@@ -3767,7 +3767,7 @@ p {
 .offers-wthreerow {
     min-height: 198px;
 }
-.w3ls-add-grids a {
+.add-grids a {
     padding: 1em;
 }
 .icon { 
@@ -3779,7 +3779,7 @@ p {
     font-size: 0.8em; 
     line-height: 2.4em; 
 }
-.w3ls-header-right ul li i.fa {
+.header-right ul li i.fa {
     margin-right: 3px;
 }
 .faq-w3agile .faq li {
@@ -3804,7 +3804,7 @@ img.w3order-img {
 }
 }
 @media(max-width:414px){
-.w3ls-header-right ul li {
+.header-right ul li {
     padding: 0 0.3em;
     font-size: 0.85em;
 }
@@ -3829,11 +3829,11 @@ img.w3order-img {
 .agileits_search input[type="submit"] { 
     width: 50%; 
 }
-.w3ls-add-grids {
+.add-grids {
     width: 100%;
     margin: 0;
 }
-.w3ls-add-grids.w3ls-add-grids-right {
+.add-grids.add-grids-right {
     margin-top: 1em;
 } 
 .deals-right h4 {
@@ -3854,7 +3854,7 @@ img.w3order-img {
 .subscribe-right { 
     padding: 0; 
 }
-.subscribe-right h3.w3ls-title {
+.subscribe-right h3.title {
     font-size: 1.4em;
 }
 .subscribe img.sub-w3lsimg {
@@ -3889,7 +3889,7 @@ img.w3order-img {
 .banner.about-w3bnr .banner-text {
     padding: 2em 0;
 }
-h3.w3ls-title {
+h3.title {
     font-size: 1.6em;
 }
 .offers-right {
@@ -3900,7 +3900,7 @@ h3.w3ls-title {
 .offers-wthreerow {
     min-height: 189px;
 }
-.w3ls-add-grids a h4 { 
+.add-grids a h4 {
     font-size: 1em;
 }
 .order-w3text {
@@ -4071,10 +4071,10 @@ ol.breadcrumb.w3l-crumbs {
 }
 }
 @media(max-width:375px){
-.subscribe-right h3.w3ls-title {
+.subscribe-right h3.title {
     font-size: 1.3em;
 }
-.w3l_logo h1 {
+.logo h1 {
     font-size: 2.2em;
 }
 .banner-text {
@@ -4086,7 +4086,7 @@ ol.breadcrumb.w3l-crumbs {
 .ftr-top-grids {
     margin-top: 1em;
 }
-.history h3.w3ls-title {
+.history h3.title {
     font-size: 1.4em; 
 }
 .dropdown-menu { 
@@ -4103,7 +4103,7 @@ ol.breadcrumb.w3l-crumbs {
 .banner-text h2 {
     font-size: 1.6em;
 }
-.add-products, .wthree-order, .w3agile-deals, .w3agile-spldishes, .wthree-menu, .products, .about, .contact, .codes {
+.add-restaurants, .wthree-order, .w3agile-deals, .w3agile-spldishes, .wthree-menu, .products, .about, .contact, .codes {
     padding: 2em 0;
 }
 .product-grids {
@@ -4118,7 +4118,7 @@ ol.breadcrumb.w3l-crumbs {
 .navbar-default .navbar-toggle { 
     margin: 8px 0 0;
 }
-.navbar-header.w3l_logo {
+.navbar-header.logo {
     width: 61%;
 }
 #staplesbmincart {
@@ -4258,7 +4258,7 @@ img.w3order-img {
     width: 21%;
     left: 26%;
 }
-.navbar-header.w3l_logo {
+.navbar-header.logo {
     width: 65%;
 }
 .banner-text {

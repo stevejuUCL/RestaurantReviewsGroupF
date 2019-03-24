@@ -1,24 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>About</title>
+    <title>Reservations</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
     <meta content="" name="keywords" />
     <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
     <!-- Custom Theme files -->
-    <link href="../RestaurantReview/css/bootstrap.css" media="all" rel="stylesheet" type="text/css">
-    <link href="../RestaurantReview/css/style.css" media="all" rel="stylesheet" type="text/css">
-    <link href="../RestaurantReview/css/fontStyle.css" rel="stylesheet"> <!-- font-awesome icons -->
+    <link href="css/bootstrap.css" media="all" rel="stylesheet" type="text/css">
+    <link href="css/style.css" media="all" rel="stylesheet" type="text/css">
+    <link href="css/fontStyle.css" rel="stylesheet"> <!-- font-awesome icons -->
+    <link href="css/bsProfileStyle.css" rel="stylesheet" type="text/css">
     <!-- //Custom Theme files -->
     <!-- js -->
-    <script src="../RestaurantReview/js/jquery-2.2.3.min.js"></script>
+    <script src="js/jquery-2.2.3.min.js"></script>
     <!-- //js -->
     <!-- web-fonts -->
     <link href="http://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
     <link href="http://fonts.googleapis.com/css?family=Yantramanav:100,300,400,500,700,900" rel="stylesheet">
     <!-- //web-fonts -->
 </head>
+<style>
+    .form-popup {
+        display: none;
+    }
+    h1 {
+        padding: 30px;
+    }
+    h2 {
+        padding:15px;
+    }
+    button {
+        background-color: #e24945;
+        text-align: center;
+        color: white;
+    }
+
+</style>
 <body>
 <!-- banner -->
 <div class="banner about-w3bnr">
@@ -125,97 +143,102 @@
     </div>
 </div>
 <!-- //banner -->
-
-
-
-
-<div><br><br><br><br><br></div>
-<div style="text-align:center;">
-<h1>About Us</h1>
-<br><h2> Group F</h2>
-<br> <h3>Le Anh Duong</h3>
-<br> <h3>Yiming Fan</h3>
-<br> <h3>Steve Zhu</h3>
-<br> <h3>Jaehong Ju</h3>
-<br> <h3>Duc Le</h3>
+<!-- breadcrumb -->
+<div class="container">
+    <ol class="breadcrumb w3l-crumbs">
+        <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+        <li class="active">Sign Up</li>
+    </ol>
 </div>
-<div><br><br><br><br><br></div>
+
+<div class="container">
+    <h1>My Reservations</h1>
+    <br>
+    <?php
+    require_once 'PHP_Database/phpDatabaseConnection.php';
+
+    // Connect to the database
+    $connection = connectToDb();
+
+    // Build the query statement
+    $query = "SELECT Restaurant.name, Restaurant.address, reservation.time, reservation.GuestNumber, reservation.ReservationID
+              FROM reservation JOIN Restaurant ON Reservation.RestaurantID = Restaurant.restaurantID 
+              ORDER BY reservation.time";
+              //WHERE businessman.ID = ??
+
+    //echo $query;
+
+    // Execute the query and retrieve the results
+    $result = mysqli_query($connection, $query);
+
+    //display results in table form
+
+    ?>
 
 
+    <table class="table">
+        <tr>
+            <th>Restaurant</th>
+            <th>Address</th>
+            <th>Date & Time</th>
+            <th>Party</th>
+            <th>Reservation ID</th>
+        </tr>
 
+        <?php while ($reservation = mysqli_fetch_assoc($result)) { ?>
+            <tr>
+                <td><?php echo $reservation['name'] ?></td>
+                <td><?php echo $reservation['address'] ?></td>
+                <td><?php echo $reservation['time'] ?></td>
+                <td><?php echo $reservation['GuestNumber'] ?></td>
+                <td><?php echo $reservation['ReservationID'] ?></td>
+                <td><button class="btn" onclick="getForm()">Modify</button></td>
 
+                <div class="form-popup" id="ModifyForm">
+                    <form class="form-container" method="post" action="modifyReservation.php">
+                        <h2>Change your Reservation</h2>
 
-<!-- subscribe -->
-<div class="subscribe agileits-w3layouts">
-    <div class="container">
-        <div class="col-md-6 social-icons w3-agile-icons">
-            <h4>Keep in touch</h4>
-            <ul>
-                <li><a class="fa fa-facebook icon facebook" href="#"> </a></li>
-                <li><a class="fa fa-twitter icon twitter" href="#"> </a></li>
-                <li><a class="fa fa-google-plus icon googleplus" href="#"> </a></li>
-                <li><a class="fa fa-weibo icon fa-weibo" href="#"> </a></li>
-            </ul>
-        </div>
-        <div class="col-md-6 subscribe-right">
-            <h3 class="title">Leave Email for<br><span>Recommendations</span></h3>
-            <form action="#" method="post">
-                <input name="email" placeholder="Enter your Email..." required="" type="email">
-                <input type="submit" value="Send to Feat">
-                <div class="clearfix"> </div>
-            </form>
-            <img alt="" class="sub-w3lsimg" src="../RestaurantReview/img/i1.png"/>
-        </div>
-        <div class="clearfix"> </div>
-    </div>
+                        <!--Input reservation ID but set display to hidden to make sure modify correct reservation-->
+                        <input type="text" name="reservationID" value="<?php echo $reservation['ReservationID'] ?>"
+
+                        <label><b>Date & Time</b></label>
+                        <input type="datetime-local" name="time" required>
+
+                        <label><b>Number of people</b></label>
+                        <input type="number"  name="GuestNumber" required>
+
+                        <button type="submit" value="">Submit</button>
+                        <button type="button" onclick="closeForm()">Close</button>
+                    </form>
+                </div>
+            </tr>
+        <?php } ?>
+    </table>
+
+    <?php
+    // Free the results from memory
+    mysqli_free_result($result);
+
+    // Close the connection
+    closeDb($connection);
+    ?>
+
 </div>
-<!-- //subscribe -->
-<!-- footer -->
-<div class="footer agileits-w3layouts">
-    <div class="container">
-        <div class="w3_footer_grids">
-            <div class="col-xs-6 col-sm-3 footer-grids w3-agileits">
-                <h3>Group</h3>
-                <ul>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                    <li><a href="#">Feedback</a></li>
-                    <li><a href="help.html">Need Help</a></li>
-                </ul>
-            </div>
-            <div class="col-xs-6 col-sm-3 footer-grids w3-agileits">
-                <h3>help</h3>
-                <ul>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="loginBusinessman.html">Cancel Reservation</a></li>
-                    <li><a href="loginBusinessman.html">Report</a></li>
-                </ul>
-            </div>
-            <div class="col-xs-6 col-sm-3 footer-grids w3-agileits">
-                <h3>Project info</h3>
-                <ul>
-                    <li><a href="http://www.cs.ucl.ac.uk/1819/a6u/t2/comp0034_web_development/">Moodle page</a></li>
-                    <li><a href="https://www.ucl.ac.uk/">About UCL</a></li>
-                    <li><a href="#">Project Report</a></li>
-                </ul>
-            </div>
-            <div class="col-xs-6 col-sm-3 footer-grids w3-agileits">
-                <h3>Other</h3>
-                <ul>
-                    <li><a href="#">Code</a></li>
-                    <li><a href="https://github.com/stevejuUCL/RestaurantReviewsGroupF.git">GitHub page</a></li>
-                </ul>
-            </div>
-            <div class="clearfix"> </div>
-        </div>
-    </div>
-</div>
+
+<script>
+    function getForm() {
+        document.getElementById("ModifyForm").style.display = "block";
+    }
+    function closeForm() {
+        document.getElementById("ModifyForm").style.display = "none";
+    }
+</script>
 
 <!-- //footer -->
 <!-- start-smooth-scrolling -->
-<script src="../RestaurantReview/js/SmoothScroll.min.js"></script>
-<script src="../RestaurantReview/js/move-top.js" type="text/javascript"></script>
-<script src="../RestaurantReview/js/easing.js" type="text/javascript"></script>
+<script src="js/SmoothScroll.min.js"></script>
+<script src="js/move-top.js" type="text/javascript"></script>
+<script src="js/easing.js" type="text/javascript"></script>
 <script type="text/javascript">
     jQuery(document).ready(function($) {
         $(".scroll").click(function(event){
@@ -226,7 +249,7 @@
     });
 </script>
 <!-- //end-smooth-scrolling -->
-<!-- smooth-scrolling-of-move-up --
+<!-- smooth-scrolling-of-move-up -->
 <script type="text/javascript">
     $(document).ready(function() {
 
@@ -238,6 +261,6 @@
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="../RestaurantReview/js/bootstrap.js"></script>
+<script src="js/bootstrap.js"></script>
 </body>
 </html>
