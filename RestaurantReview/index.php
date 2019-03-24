@@ -8,7 +8,6 @@
     <script type="application/x-javascript"> addEventListener("load", function () {
             setTimeout(hideURLbar, 0);
         }, false);
-
         function hideURLbar() {
             window.scrollTo(0, 1);
         } </script>
@@ -74,41 +73,7 @@
                     <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
                         <ul class="nav navbar-nav navbar-right">
                             <li><a class="active" href="index.php">Home</a></li>
-                            <!-- Mega Menu -->
-                            <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Restaurants <b
-                                            class="caret"></b></a>
-                                <ul class="dropdown-menu multi-column columns-3">
-                                    <div class="row">
-                                        <div class="col-sm-4">
-                                            <ul class="multi-column-dropdown">
-                                                <h6>Food type</h6>
-                                                <li><a href="restaurants.php">Breakfast</a></li>
-                                                <li><a href="restaurants.php">Lunch</a></li>
-                                                <li><a href="restaurants.php">Dinner</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <ul class="multi-column-dropdown">
-                                                <h6>Cuisine</h6>
-                                                <li><a href="restaurants.php">Chinese Food</a></li>
-                                                <li><a href="restaurants.php">American Food</a></li>
-                                                <li><a href="restaurants.php">French Food</a></li>
-                                                <li><a href="restaurants.php">Italian Food</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <ul class="multi-column-dropdown">
-                                                <h6>Reservation type</h6>
-                                                <li><a href="restaurants.php">For Single Person</a></li>
-                                                <li><a href="restaurants.php">For Couples</a></li>
-                                                <li><a href="restaurants.php">For Groups</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                </ul>
-                            </li>
+                            <li><a href="restaurants.php">Restaurants</a></li>
                             <li><a href="reservations.php">Reservations</a></li>
                             <li><a href="contact.php">Contact Us</a></li>
                         </ul>
