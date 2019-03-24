@@ -14,7 +14,7 @@ require_once('header.php');
 <div class="login-page about">
     <img class="login-w3img" src="img/img3.jpg" alt="">
     <div class="container">
-        <h3 class="title w3ls-title1">Sign Up to your Restaurant Owner Account</h3>
+        <h3 class="title w3ls-title1">Sign Up to your Businessman Account</h3>
         <div class="login-agileinfo">
             <h5 class="text-danger"><?php if (isset($_SESSION["error_message"])) {
                     echo $_SESSION["error_message"];

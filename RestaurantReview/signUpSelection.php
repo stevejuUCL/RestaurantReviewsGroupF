@@ -1,4 +1,4 @@
-<title>Signup</title>
+<title>Sign Up</title>
 
 <?php
 require_once('header.php');
