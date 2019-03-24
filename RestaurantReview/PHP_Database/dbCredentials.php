@@ -1,6 +1,6 @@
 <?php
 define("DBSERVER","localhost");
-define("DBUSER","itsSunshine");
-define("DBPASSWORD","26111998");
+define("DBUSER","steveju");
+define("DBPASSWORD","stevejuju546");
 define("DBNAME","restaurantreview");
 define("DBPORT",3306);

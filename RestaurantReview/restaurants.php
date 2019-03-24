@@ -362,8 +362,8 @@ require_once('header.php');
                         <img src="../RestaurantReview/img/s1.jpg" alt=" " class="img-responsive">
                     </div>
                     <div class="col-md-7 modal_body_right single-top-right">
-                        <h3 class="item_name">France Special Dish</h3>
-                        <p>Proin placerat urna et consequat efficitur, sem odio blandit enim</p>
+                        <h3 class="item_name">Resaurant name</h3>
+                        <p>Some descriptions</p>
                         <div class="single-rating">
                             <ul>
                                 <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
@@ -371,36 +371,46 @@ require_once('header.php');
                                 <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
                                 <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
                                 <li class="w3act"><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                                <li class="rating">20 reviews</li>
+                                <li class="rating">** reviews</li>
                                 <li><a href="#">Add your review</a></li>
                             </ul>
                         </div>
-                        <div class="single-price">
+                        <div>
                             <ul>
-                                <li>$18</li>
-                                <li><del>$20</del></li>
-                                <li><span class="w3off">10% OFF</span></li>
-                                <li>Ends on : Dec,5th</li>
-                                <li><a href="#"><i class="fa fa-gift" aria-hidden="true"></i> Coupon</a></li>
+                                <select id="" name="time_choose" required>
+                                    <option value="">Choose your time</option>
+                                    <option value="05:30pm">05:30pm</option>
+                                    <option value="06:00pm">06:00pm</option>
+                                    <option value="06:30pm">06:30pm</option>
+                                    <option value="07:00pm">07:00pm</option>
+                                    <option value="07:30pm">07:30pm</option>
+                                    <option value="08:00pm">08:00pm</option>
+                                    <option value="08:30pm">08:00pm</option>
+                                    <option value="09:00pm">09:00pm</option>
+                                    <option value="09:30pm">09:30pm</option>
+                                    <option value="10:00pm">10:00pm</option>
+                                    <option value="10:30pm">10:30pm</option>
+                                    <option value="11:00pm">11:00pm</option>
+                                </select>
+                                <select id="" name="people_choose" required>
+                                    <option value="">Choose table size</option>
+                                    <option value="tableFor1">table for 1</option>
+                                    <option value="tableFor2">table for 2</option>
+                                    <option value="tableFor3">table for 3</option>
+                                    <option value="tableFor4">table for 4</option>
+                                    <option value="tableFor5-8">table for 5-8</option>
+                                    <option value="tableFor9-10">table for 9-10</option>
+                                    <option value="tableFor10+">table for 10+</option>
+                                </select>
                             </ul>
                         </div>
-                        <p class="single-price-text">Fusce a egestas nibh, eget ornare erat. Proin placerat, urna et consequat efficitur, sem odio blandit enim, sit amet euismod turpis est mattis lectus. Vestibulum maximus quam et quam egestas imperdiet. In dignissim auctor viverra. </p>
-                        <form action="#" method="post">
-                            <input type="hidden" name="cmd" value="_cart" />
-                            <input type="hidden" name="add" value="1" />
-                            <input type="hidden" name="w3ls_item" value="France Special" />
-                            <input type="hidden" name="amount" value="18.00" />
-                            <button type="submit" class="w3ls-favorite" ><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
-                        </form>
-                        <a href="#" class="w3ls-favorite w3ls-favoriate-like"><i class="fa fa-heart-o" aria-hidden="true"></i> Add to Wishlist</a>
+                        <br><br>
+                        <a href="#" class="w3ls-favorite w3ls-favoriate-like"></i> Make a reservation</a>
                         <div class="single-page-icons social-icons">
                             <ul>
                                 <li><h4>Share on</h4></li>
                                 <li><a href="#" class="fa fa-facebook icon facebook"> </a></li>
                                 <li><a href="#" class="fa fa-twitter icon twitter"> </a></li>
-                                <li><a href="#" class="fa fa-google-plus icon googleplus"> </a></li>
-                                <li><a href="#" class="fa fa-dribbble icon dribbble"> </a></li>
-                                <li><a href="#" class="fa fa-rss icon rss"> </a></li>
                             </ul>
                         </div>
                     </div>

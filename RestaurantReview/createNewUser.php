@@ -75,8 +75,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION["error_message"] = $error_message;
     }
     if ($userType == "businessman") {
-        header('Location: signUpBusinessman.php');
+        header('location：signUpBusinessman.php');
     } elseif ($userType == "restaurant") {
-        header('Location: signUpRestaurant.php');
+    header('location: signUpRestaurant.php');
     }
 }
