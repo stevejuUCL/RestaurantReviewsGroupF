@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] != "POST") {
         $password = $_POST['password'];
         $userType = $_POST['userType'];
 
-        $qryFindUser = "SELECT * From users WHERE username = '$username'";
+        $qryFindUser = "SELECT * From users WHERE username = '$username' && userType = '$userType'";
         $qryLogin = "SELECT * from users WHERE username = '$username' AND password = '$password' ";
 
 
@@ -25,15 +25,21 @@ if ($_SERVER["REQUEST_METHOD"] != "POST") {
                 $_SESSION['userID'] = $rowLogin['userID'];
                 $_SESSION['username'] = $rowLogin['username'];
                 $_SESSION['email'] = $rowLogin['email'];
+                $_SESSION['userType'] = $rowLogin['userType'];
                 if ($rowLogin['userType'] == "businessman") {
                     header('Location: updateInfoBusinessman.php');
                 } elseif ($rowLogin['userType'] == "restaurant") {
                     header('Location: updateInfoRestaurant.php');
                 }
             } else {
-                echo "Incorrect password.";
+                $error_message = "Incorrect Password. <br>";
+                $_SESSION["error_message"] = $error_message;
+                header('Location: ' . $_SERVER['HTTP_REFERER']);
             }
         } else {
-            echo "Username not found.";
+            $error_message .= "Username not found or you're on the wrong login page.";
+            $_SESSION["error_message"] = $error_message;
+            header('Location: ' . $_SERVER['HTTP_REFERER']);
+
         }
     }

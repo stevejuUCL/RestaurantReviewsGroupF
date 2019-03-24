@@ -14,14 +14,17 @@ $queryExist = "SELECT * From businessman JOIN users on businessman.businessmanID
 $resultExist = mysqli_query($connection, $queryExist);
 
 if (mysqli_num_rows($resultExist) > 0) {
-
     ?>
     <title> Your Information </title>
     <div class="container">
         <ol class="breadcrumb w3l-crumbs">
             <li><a href="index.php"><i class="fa fa-home"></i> Home</a></li>
-            <li class="active">Login</li>
+            <li class="active">My Account</li>
         </ol>
+    </div>
+
+    <div>
+        <br><br><br><br><br>
     </div>
 
     <div>
@@ -42,7 +45,11 @@ if (mysqli_num_rows($resultExist) > 0) {
         <td><?php echo $businessman['company'] ?></td>
         <td><?php echo $businessman['email'] ?></td>
         </table>
-    </div>
+        </div>
+
+        <div>
+            <br><br><br><br><br>
+        </div>
 
     <?php }
 }else {

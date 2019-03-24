@@ -20,12 +20,12 @@ if (mysqli_num_rows($resultExist) > 0) {
     <div class="container">
         <ol class="breadcrumb w3l-crumbs">
             <li><a href="index.php"><i class="fa fa-home"></i> Home</a></li>
-            <li class="active">Login</li>
+            <li class="active">My Account</li>
         </ol>
     </div>
 
     <div style="text-align: center">
-    <table class="center">
+    <table class="table">
     <tr>
         <th>Name</th>
         <th>Username</th>

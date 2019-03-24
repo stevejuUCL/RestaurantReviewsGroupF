@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -115,27 +118,32 @@
     </div>
 </div>
 <!-- add-products -->
-<div class="add-restaurants">
-    <div class="container">
-        <div class="add-products-row">
-            <div class="add-grids">
-                <a href="formLogIn.php">
-                    <h4><span>Login here<br></span> if you are a <span>Customer</span></h4>
-                    <h5>We prepared wonderful restaurants for you</h5>
-                    <h6>Login Now <i aria-hidden="true" class="fa fa-arrow-circle-right"></i></h6>
-                </a>
+<?php
+if (!isset($_SESSION["userID"])) {
+    ?>
+    <div class="add-restaurants">
+        <div class="container">
+            <div class="add-products-row">
+                <div class="add-grids">
+                    <a href="formLogIn.php?account_type=businessman">
+                        <h4><span>Login here<br></span> if you are a <span>Customer</span></h4>
+                        <h5>We prepared wonderful restaurants for you</h5>
+                        <h6>Login Now <i aria-hidden="true" class="fa fa-arrow-circle-right"></i></h6>
+                    </a>
+                </div>
+                <div class="add-grids add-grids-right">
+                    <a href="formLogIn.php?account_type=restaurant">
+                        <h4><span>Login here<br></span> if you are a <span>Owner</span></h4>
+                        <h5>Better way for business</h5>
+                        <h6>Login Now <i aria-hidden="true" class="fa fa-arrow-circle-right"></i></h6>
+                    </a>
+                </div>
+                <div class="clearfix"></div>
             </div>
-            <div class="add-grids add-grids-right">
-                <a href="formLogIn.php">
-                    <h4><span>Login here<br></span> if you are a <span>Owner</span></h4>
-                    <h5>Better way for business</h5>
-                    <h6>Login Now <i aria-hidden="true" class="fa fa-arrow-circle-right"></i></h6>
-                </a>
-            </div>
-            <div class="clearfix"></div>
         </div>
-    </div>
-</div>
+    </div> <?php
+}
+?>
 <!-- //add-products -->
 <!-- order -->
 <div class="wthree-order">

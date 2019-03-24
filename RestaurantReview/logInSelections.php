@@ -1,4 +1,11 @@
 <?php session_start();
+if (isset($_SESSION["userID"])) {
+    if ($_SESSION['userType'] == "businessman") {
+        header('location: updateInfoBusinessman.php');
+    } else if ($_SESSION['userType'] == "restaurant") {
+        header('location: updateInfoRestaurant.php');
+    }
+}
 require_once('header.php');
 ?>
 <title>Login</title>

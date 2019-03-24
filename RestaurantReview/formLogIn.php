@@ -2,7 +2,7 @@
 if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET["account_type"])) {
     if ($_GET["account_type"] != "businessman" && $_GET["account_type"] != "restaurant") {
 //        header('location: logInSelections.php');
-        echo $_GET["account_type"] . "something wrong";
+        //echo $_GET["account_type"] . "something wrong";
     }else {
         require_once('header.php');
         ?>
@@ -21,6 +21,10 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET["account_type"])) {
             <div class="container">
                 <h3 class="title w3ls-title1">Login to your <?= $_GET["account_type"] ?? "" ?> account</h3>
                 <div class="login-agileinfo">
+                    <h5 class="text-danger"><?php if (isset($_SESSION["error_message"])) {
+                            echo $_SESSION["error_message"];
+                            unset($_SESSION["error_message"]);
+                        }?></h5>
                     <form action="logIn.php" method="post">
                         <input class="agile-ltext" type="text" name="username" placeholder="Username" required="">
                         <input class="agile-ltext" type="password" name="password" placeholder="Password" required="">

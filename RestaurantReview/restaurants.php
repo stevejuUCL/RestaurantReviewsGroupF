@@ -1,7 +1,10 @@
-<title>Restaurants</title>
 <?php
+session_start();
+if (isset($_SESSION["userID"])) {
+
 require_once('header.php');
 ?>
+<title>Restaurants</title>
 <!-- products -->
 <div class="products">
     <div class="container">
@@ -251,7 +254,7 @@ require_once('header.php');
                     <h4>By Cuisine</h4>
                     <ul class="faq">
                         <li class="item1"><a href="#">Chinese Food<span
-                                    class="glyphicon glyphicon-menu-down"></span></a>
+                                        class="glyphicon glyphicon-menu-down"></span></a>
                             <ul>
                                 <li class="subitem1"><a href="#">DimSim</a></li>
                                 <li class="subitem1"><a href="#">HotPot</a></li>
@@ -259,7 +262,7 @@ require_once('header.php');
                             </ul>
                         </li>
                         <li class="item2"><a href="#">Italian Food<span
-                                    class="glyphicon glyphicon-menu-down"></span></a>
+                                        class="glyphicon glyphicon-menu-down"></span></a>
                             <ul>
                                 <li class="subitem1"><a href="#">Panzanella</a></li>
                                 <li class="subitem1"><a href="#">Margherita Pizza </a></li>
@@ -268,7 +271,7 @@ require_once('header.php');
                             </ul>
                         </li>
                         <li class="item3"><a href="#">American Food<span
-                                    class="glyphicon glyphicon-menu-down"></span></a>
+                                        class="glyphicon glyphicon-menu-down"></span></a>
                             <ul>
                                 <li class="subitem1"><a href="#">Sandwiches</a></li>
                                 <li class="subitem1"><a href="#">Hot dog</a></li>
@@ -426,5 +429,12 @@ require_once('header.php');
 
 <?php
 require_once('footer.php');
+
+} else {
+    header('location:logInSelections.php');
+}
+
 ?>
+
+
 

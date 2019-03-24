@@ -1,9 +1,9 @@
-<title>Reservations</title>
 
 <?php
-require_once('header.php');
+require_once('./../RestaurantReview/header.php');
 ?>
 
+<title>Reservations</title>
 
 <section class="innerpage-wrapper">
     <div id="dashboard" class="innerpage-section-padding">
@@ -117,6 +117,6 @@ require_once('header.php');
 </section><!-- end innerpage-wrapper -->
 
 <?php
-require_once('footer.php');
+require_once('\'./../RestaurantReview/footer.php');
 ?>
 
