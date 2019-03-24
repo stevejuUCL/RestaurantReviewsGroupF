@@ -380,6 +380,7 @@ require_once('header.php');
                         </div>
                         <div>
                             <ul>
+                                <input type="date" name="dateReserve">
                                 <select id="" name="time_choose" required>
                                     <option value="">Choose your time</option>
                                     <option value="05:30pm">05:30pm</option>
