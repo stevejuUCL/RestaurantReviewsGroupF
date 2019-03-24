@@ -50,6 +50,9 @@ session_start();
                             <a href="signUpSelection.php"><i aria-hidden="true" class="fa fa-user-plus"></i> Signup</a>
                         </li>
                         <li class="head-dpdn">
+                            <a href="logout.php"><i aria-hidden="true" class="fa fa-sign-out"></i> Logout</a>
+                        </li>
+                        <li class="head-dpdn">
                             <a href="help.php"><i aria-hidden="true" class="fa fa-question-circle"></i> Help</a>
                         </li>
                     </ul>
@@ -77,7 +80,7 @@ session_start();
                         <ul class="nav navbar-nav navbar-right">
                             <li><a class="active" href="index.php">Home</a></li>
                             <li><a href="restaurants.php">Restaurants</a></li>
-                            <li><a href="reservations.php">Reservations</a></li>
+                            <li><a href="GetReservations.php">Reservations</a></li>
                             <li><a href="contact.php">Contact Us</a></li>
                         </ul>
                     </div>

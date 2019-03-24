@@ -426,15 +426,9 @@ require_once('header.php');
 <!-- //modal -->
 
 <div><br><br><br><br><br></div>
-
-<?php
-require_once('footer.php');
-
-} else {
+    <?php
+    require_once('footer.php');}
+else {
     header('location:logInSelections.php');
 }
-
 ?>
-
-
-

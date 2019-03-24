@@ -11,26 +11,7 @@ if (isset($_SESSION["userID"])) {
 
 
     ?>
-    <style>
-        .form-popup {
-            display: none;
-        }
-
-        h1 {
-            padding: 30px;
-        }
-
-        h2 {
-            padding: 15px;
-        }
-
-        button {
-            background-color: salmon;
-            text-align: center;
-            color: white;
-        }
-
-    </style>
+    <br><br><br><br><br>
     <div class="container">
         <h1>My Reservations</h1>
         <br>
@@ -178,7 +159,7 @@ if ($userType == "businessman") {
         // Close the connection
         closeDb($connection);
         ?>
-
+        <br><br><br><br><br>
     </div>
 
     <script>
