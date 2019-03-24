@@ -4285,3 +4285,7 @@ display: inherit;
 .showItUp {
     display: block;
 }
+table.center {
+    margin-left:auto;
+    margin-right:auto;
+}

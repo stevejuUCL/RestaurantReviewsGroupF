@@ -13,14 +13,18 @@ if ($_SERVER["REQUEST_METHOD"] != "POST") {
         $qryFindUser = "SELECT * From users WHERE username = '$username'";
         $qryLogin = "SELECT * from users WHERE username = '$username' AND password = '$password' ";
 
+
 //Check if username exists
         $resultUsername = mysqli_query($connection, $qryFindUser);
         $resultLogin = mysqli_query($connection, $qryLogin);
         $rowLogin = mysqli_fetch_array($resultLogin);
 
+
         if (mysqli_num_rows($resultUsername) > 0) {
             if ($rowLogin['username'] == $username && $rowLogin['password'] == $password) {
-                $_SESSION['user'] = $rowLogin['userID'];
+                $_SESSION['userID'] = $rowLogin['userID'];
+                $_SESSION['username'] = $rowLogin['username'];
+                $_SESSION['email'] = $rowLogin['email'];
                 if ($rowLogin['userType'] == "businessman") {
                     header('Location: updateInfoBusinessman.php');
                 } elseif ($rowLogin['userType'] == "restaurant") {
