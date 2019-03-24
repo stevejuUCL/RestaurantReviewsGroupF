@@ -2,9 +2,6 @@
 require_once('PHP_Database/phpDatabaseConnection.php');
 require_once('header.php');
 
-// loop if check from database if user exist in corerect table
-// if true >> $exist = true;
-// else >> $exist = false;
 
 $userID = $_SESSION['userID'];
 $username = $_SESSION['username'];
@@ -13,6 +10,7 @@ $email = $_SESSION['email'];
 $queryExist = "SELECT * From businessman JOIN users on businessman.businessmanID = users.userID WHERE businessmanID = '$userID'";
 $resultExist = mysqli_query($connection, $queryExist);
 
+//check if user already updated their information then display in a table
 if (mysqli_num_rows($resultExist) > 0) {
     ?>
     <title> Your Information </title>
@@ -52,6 +50,7 @@ if (mysqli_num_rows($resultExist) > 0) {
         </div>
 
     <?php }
+//if they haven't yet, prompt them to update their Information
 }else {
   ?>
     <title>Please Update Your Account </title>
