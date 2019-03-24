@@ -2,8 +2,8 @@
 require_once('PHP_Database/phpDatabaseConnection.php');
 //$connection = connectToDb();
 
-$Username = $_POST['Username'];
-$password = $_POST['password'] ;
+    $Username = $_POST['Username'];
+    $password = $_POST['password'] ;
 
 $qryFindUser = "SELECT * From restaurant WHERE userName = '$Username'";
 $qryLogin = "SELECT * from restaurant WHERE userName = '$Username' AND password = '$password' ";

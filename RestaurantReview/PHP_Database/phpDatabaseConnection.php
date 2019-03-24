@@ -32,4 +32,4 @@ function closeDb($connection)
     }
 }
 
-connectToDb();
+$connection = connectToDb();
