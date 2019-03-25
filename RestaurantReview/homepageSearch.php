@@ -82,7 +82,7 @@ require_once('header.php');
                         <img src="../RestaurantReview/img/s1.jpg" alt=" " class="img-responsive">
                     </div>
                     <div class="col-md-7 modal_body_right single-top-right">
-                        <h3 class="item_name">Resaurant name</h3>
+                        <h3 class="item_name">Restaurant name</h3>
                         <p>Some descriptions</p>
                         <div class="single-rating">
                             <ul>
