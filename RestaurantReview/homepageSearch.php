@@ -1,6 +1,7 @@
 <title>Search</title>
 
 <?php
+session_start();
 require_once('header.php');
 ?>
 <style>
@@ -51,13 +52,18 @@ require_once('header.php');
                         <th></th>
                       </tr>";
                 echo "<tr>" .
-                        "<td>" . $row["name"] . "</td>" .
-                        "<td>" . $row["contactNumber"] . "</td>" .
-                        "<td>" . $row["address"] . "</td>" .
-                        "<td>" . $row["typeOfCuisine"] . "</td>" .
-                        "<td>" . $row["priceRange"] . "</td>" .
-                        "<td><a href=\"#\" style='color: #ffffff;' data-toggle=\"modal\" data-target=\"#myModal1\">Make a reservation</a></td>" .
-                    "</tr>";
+                    "<td>" . $row["name"] . "</td>" .
+                    "<td>" . $row["contactNumber"] . "</td>" .
+                    "<td>" . $row["address"] . "</td>" .
+                    "<td>" . $row["typeOfCuisine"] . "</td>" .
+                    "<td>" . $row["priceRange"] . "</td>";
+
+                if (!isset($_SESSION["userID"])) {
+                    echo "<td><a href=\"logInSelections.php\" style='color: #ffffff;' >Login to Reserve</a></td>";
+                } else {
+                    echo "<td><a href=\"#\" style='color: #ffffff;' data-toggle=\"modal\" data-target=\"#myModal1\">Make a reservation</a></td>";
+                }
+                echo "</tr>";
             }
         } else {
             echo "<h3 style='text-align:center'>Sorry, restaurant not found.😢<h3>";
@@ -129,6 +135,7 @@ require_once('header.php');
                         </div>
                         <br><br>
                         <a href="#" class="w3ls-favorite w3ls-favoriate-like"> Make a reservation</a>
+
                         <div class="single-page-icons social-icons">
                             <ul>
                                 <li><h4>Share on</h4></li>
