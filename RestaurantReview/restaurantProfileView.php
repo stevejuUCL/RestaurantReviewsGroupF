@@ -9,7 +9,7 @@ require_once('header.php');
         </p>
         <h3 class="panel-text3">Restaurant Profile</h3><br>
         <ul style="list-style-type: none;" class="panel-text4">
-            <li>Restaurant Name:</li>
+            <li>Restaurant Name: </li>
             <li>Email:</li>
             <li>Contact Number:</li>
             <li>Average Rating:</li>
