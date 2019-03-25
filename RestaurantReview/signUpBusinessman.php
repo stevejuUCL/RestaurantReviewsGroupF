@@ -38,7 +38,7 @@ require_once('header.php');
                 </div>
                 <input type="submit" value="SIGNUP">
             </form>
-            <p>Already have an account?  <a href="../HTMLfiles-noLongerUsed/loginRestaurantOwner.html"> Login Now!</a></p>
+            <p>Already have an account?  <a href="logInSelections.php"> Login Now!</a></p>
         </div>
     </div>
 </div>

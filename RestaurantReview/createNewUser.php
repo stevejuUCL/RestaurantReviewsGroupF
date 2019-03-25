@@ -7,7 +7,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $error_message = "";
     if (isset($_POST['username']) && !empty($_POST['username'])) {
         $username = $_POST['username']; //PHP 7.0
-        echo $username . "<br>";
     } else {
         $all_correct = false;
         $error_message .= "Empty username<br>";
@@ -15,7 +14,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (isset($_POST['email']) && !empty($_POST['email'])) {
         $email = $_POST['email']; //PHP 7.0
-        echo $email . "<br>";
     } else {
         $all_correct = false;
         $error_message .= "Empty email<br>";
@@ -23,7 +21,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (isset($_POST['password']) && !empty($_POST['password'])) {
         $password = $_POST['password'];
-        echo $password . "<br>";
     } else {
         $all_correct = false;
         $error_message .= "Empty password<br>";
@@ -31,7 +28,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (isset($_POST['confirmPassword']) && !empty($_POST['confirmPassword'])) {
         $confirmPassword = $_POST['confirmPassword'];
-        echo $confirmPassword . "<br>";
         if ($confirmPassword != $password) {
             $all_correct = false;
             $error_message .= "Password mismatch<br>";
@@ -54,29 +50,29 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $qryFindEmail = "SELECT * FROM users ";
     $qryFindEmail .= "WHERE email = '" . $email . "'";
-//    echo mysqli_num_rows($result1) . "<br>";
 
     $result2 = mysqli_query($connection, $qryFindEmail);
-//    echo mysqli_num_rows($result2) . "<br>";
 //    print_r(mysqli_fetch_assoc($result2));
     if (mysqli_num_rows($result2) > 0) {
         $all_correct = false;
         $error_message .= "Email already registered.<br>";
     }
 
-
     if ($all_correct) {
         $qryCreate = "INSERT INTO users (username, email, password, userType) VALUES ('$username', '$email', '$password', '$userType')";
         mysqli_query($connection, $qryCreate);
         $success_message = "Success! Please Log In to update your Account Information. <br>";
         $_SESSION["success_message"] = $success_message;
-        header('Location: logInSelections.php?registered=true');
+        header('Location: logInSelections.php');
     } else {
         $_SESSION["error_message"] = $error_message;
-    }
-    if ($userType == "businessman") {
-        header('location：signUpBusinessman.php');
-    } elseif ($userType == "restaurant") {
-    header('location: signUpRestaurant.php');
+        if ($userType == "businessman") {
+            header('Location: signUpBusinessman.php');
+        } elseif ($userType == "restaurant") {
+            header('Location: signUpRestaurant.php');
+        }else {
+            header($_SERVER["SERVER_PROTOCOL"] . " 404 Not Found!!!");
+            exit("<h1>404 Not Found</h1>");
+        }
     }
 }

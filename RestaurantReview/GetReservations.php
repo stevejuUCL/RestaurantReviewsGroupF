@@ -175,7 +175,6 @@ if ($userType == "businessman") {
         <?php }
             }
         // Free the results from memory
-        mysqli_free_result($result);
 
         // Close the connection
         closeDb($connection);
