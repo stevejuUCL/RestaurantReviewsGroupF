@@ -43,14 +43,14 @@ if (isset($_SESSION["userID"])) {
 
         //$businessmanID = $_POST['businessmanID'];
 if ($userType == "businessman") {
-    $querySearch = "SELECT restaurant.name, restaurant.address, reservation.time, reservation.GuestNumber, reservation.ReservationID
+    $querySearch = "SELECT restaurant.name, restaurant.address, reservation.date, reservation.time, reservation.GuestNumber, reservation.ReservationID
               FROM reservation JOIN Restaurant ON reservation.RestaurantID = restaurant.restaurantID 
               WHERE `businessmanID` = '$userID' ORDER BY reservation.time";
 
 }elseif ($userType == "restaurant") {
     $querySearch = "SELECT businessman.name, businessman.contactNumber, reservation.time, reservation.GuestNumber, reservation.ReservationID
               FROM reservation JOIN businessman ON Reservation.businessmanID = businessman.businessmanID 
-              WHERE `businessmanID` = '$userID' ORDER BY reservation.time";
+              WHERE `restaurantID` = '$userID' ORDER BY reservation.time";
 }
         //echo $query;
 
@@ -67,7 +67,8 @@ if ($userType == "businessman") {
             <tr>
                 <th>Restaurant</th>
                 <th>Address</th>
-                <th>Date & Time</th>
+                <th>Date</th>
+                <th>& Time</th>
                 <th>Party</th>
                 <th>Reservation ID</th>
                 <th></th>
@@ -78,6 +79,7 @@ if ($userType == "businessman") {
                 <tr>
                     <td><?php echo $reservation['name'] ?></td>
                     <td><?php echo $reservation['address'] ?></td>
+                    <td><?php echo $reservation['date'] ?></td>
                     <td><?php echo $reservation['time'] ?></td>
                     <td><?php echo $reservation['GuestNumber'] ?></td>
                     <td><?php echo $reservation['ReservationID'] ?></td>

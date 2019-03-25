@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 24, 2019 at 01:34 AM
+-- Generation Time: Mar 25, 2019 at 08:12 AM
 -- Server version: 10.1.38-MariaDB
 -- PHP Version: 7.3.2
 
@@ -38,6 +38,16 @@ CREATE TABLE `businessman` (
   `company` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Dumping data for table `businessman`
+--
+
+INSERT INTO `businessman` (`businessmanID`, `name`, `contactNumber`, `company`) VALUES
+(10, 'Le Anh Duong', 2147483647, 'UCL'),
+(3, 'Anh Duong', 2147483647, 'UCL'),
+(14, 'Le Anh Duong', 2147483647, 'UCL'),
+(16, 'Anh Duong', 934335454, 'UCL');
+
 -- --------------------------------------------------------
 
 --
@@ -49,7 +59,8 @@ CREATE TABLE `reservation` (
   `ReservationID` int(11) NOT NULL,
   `RestaurantID` int(11) NOT NULL,
   `BusinessmanID` int(11) NOT NULL,
-  `time` datetime NOT NULL,
+  `date` date NOT NULL,
+  `time` time NOT NULL,
   `GuestNumber` int(11) NOT NULL,
   `additionalRequest` varchar(400) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -58,10 +69,10 @@ CREATE TABLE `reservation` (
 -- Dumping data for table `reservation`
 --
 
-INSERT INTO `reservation` (`ReservationID`, `RestaurantID`, `BusinessmanID`, `time`, `GuestNumber`, `additionalRequest`) VALUES
-(7, 67890, 1, '2019-03-18 00:00:00', 2, 'no'),
-(8, 45678, 1, '2019-03-16 00:00:00', 1, 'No'),
-(9, 45678, 3, '2019-03-27 00:00:00', 2, 'No');
+INSERT INTO `reservation` (`ReservationID`, `RestaurantID`, `BusinessmanID`, `date`, `time`, `GuestNumber`, `additionalRequest`) VALUES
+(8, 45678, 1, '2019-03-16', '00:00:00', 1, 'No'),
+(9, 45678, 3, '2019-03-27', '00:00:00', 2, 'No'),
+(10, 13, 14, '2019-03-04', '08:00:00', 4, '');
 
 -- --------------------------------------------------------
 
@@ -75,21 +86,22 @@ CREATE TABLE `restaurant` (
   `name` varchar(100) NOT NULL,
   `address` varchar(200) NOT NULL,
   `contactNumber` int(10) NOT NULL,
-  `typeOfCuisine` int(11) NOT NULL,
+  `typeOfCuisine` varchar(11) NOT NULL,
   `priceRange` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
 
 --
 -- Dumping data for table `restaurant`
 --
 
 INSERT INTO `restaurant` (`restaurantID`, `name`, `address`, `contactNumber`, `typeOfCuisine`, `priceRange`) VALUES
-(3, 'Little Cook', '36 a St. YU7H YGJ', 332, 'American', 2);
+(3, 'Little Cook', '36 a St. YU7H YGJ', 332, '0', 2),
+(6, 'Anh Duong Le', 'Flat 4, 22 Carburton Street', 934039403, '0', 1),
+(11, 'Little Lamb', '50 Gower Street, London', 2147483647, '', 1),
+(12, 'Sugar', '10 Gower Street', 2147483647, 'Korean', 11),
+(13, 'yiming', '11 the combne', 799776326, 'chinese', 10);
 
 -- --------------------------------------------------------
-
 
 --
 -- Table structure for table `users`
@@ -109,8 +121,17 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`userID`, `username`, `email`, `password`, `userType`) VALUES
-(2, 'testuserB1', 'kien@gmail.com', 'Ad123456', ''),
-(3, 'testuserB', 'lad.me.98@gmail.com', 'Ab123456', 'businessman');
+(3, 'testuserB', 'lad.me.98@gmail.com', 'Ab123456', 'businessman'),
+(4, 'zcbeadl', 'duong@gmail.com', 'Ad123456', 'businessman'),
+(5, 'testuserR', 'kien@gmail.com', 'Ad123456', 'businessman'),
+(6, 'testuserB1', 'luoinguyen1209@gmail.com', 'Ad123456', 'restaurant'),
+(7, 'LELELEE', 'anh.le.16@ucl.ac.uk', 'Ab123456', 'restaurant'),
+(10, 'LeAnh', 'anh.le.18@ucl.ac.uk', 'Ad123456', 'businessman'),
+(11, 'testuserRes', 'duong@cook.com', 'Ad123456', 'restaurant'),
+(12, 'ResUser', 'leanh@gmail.com', 'Ad123456', 'restaurant'),
+(13, 'maodwj', 'maodwj@ucl.ac.uk', 'Ad123456', 'restaurant'),
+(14, 'dylan110', 'duong@business.com', 'Ad123456', 'businessman'),
+(16, 'LeLe', 'duong@abusiness.com', 'Ad123456', 'businessman');
 
 --
 -- Indexes for dumped tables
@@ -150,13 +171,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `reservation`
 --
 ALTER TABLE `reservation`
-  MODIFY `ReservationID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `ReservationID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `userID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `userID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- Constraints for dumped tables

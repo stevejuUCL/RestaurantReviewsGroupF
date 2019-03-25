@@ -1,10 +1,7 @@
-<?php
+<?php session_start();
+if (!isset($_SESSION["userID"])) {
 require_once('header.php');
 ?>
-
-<?php
-if (!isset($_SESSION["userID"])) {
-    ?>
     <title>Sign Up</title>
     <!-- breadcrumb -->
     <div class="container">

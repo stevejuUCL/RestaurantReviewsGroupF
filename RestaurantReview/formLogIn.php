@@ -42,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET["account_type"])) {
                         </div>
                         <input type="submit" value="LOGIN">
                     </form>
-                    <p>Don't have an Account? <a href="signUpBusinessman.php"> Sign Up Now!</a></p>
+                    <p>Don't have an Account? <a href="signUpSelection.php"> Sign Up Now!</a></p>
                 </div>
             </div>
         </div>

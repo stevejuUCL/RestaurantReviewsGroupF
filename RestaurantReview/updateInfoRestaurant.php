@@ -65,7 +65,7 @@ if (mysqli_num_rows($resultExist) > 0) {
             <input class="agile-ltext" type="text" name="name" placeholder="Full Name" required="">
             <input class="agile-ltext" type="text" name="address" placeholder="Address" required="">
             <input class="agile-ltext" type="text" name="contactNumber" placeholder="Phone Number" required="">
-            <input class="agile-ltext" type="text" name="typeOfCuisine" placeholder="Type of Cuisine" required="">
+            <input class="agile-ltext" type="text" name="cuisine" placeholder="Type of Cuisine" required="">
             <input class="agile-ltext" type="text" name="priceRange" placeholder="Price" required="">
             <input class="agile-ltext" type="email" name="email" placeholder="Email" value="<?php echo $email?>" required="">
             <input type="submit" value="Submit">
