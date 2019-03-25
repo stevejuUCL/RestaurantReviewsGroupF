@@ -57,7 +57,7 @@ require_once('header.php');
                     "<td>" . $row["address"] . "</td>" .
                     "<td>" . $row["typeOfCuisine"] . "</td>" .
                     "<td>" . $row["priceRange"] . "</td>";
-
+                $_SESSION['resID'] = $row["restaurantID"];
                 if (!isset($_SESSION["userID"])) {
                     echo "<td><a href=\"logInSelections.php\" style='color: #ffffff;' >Login to Reserve</a></td>";
                 } else {
@@ -101,9 +101,10 @@ require_once('header.php');
                                 <li><a href="#">Add your review</a></li>
                             </ul>
                         </div>
-                        <div>
-                            <ul>
-                                <form action="createNewRsv.php" method="POST">
+                        <form action="createNewRsv.php" method="POST">
+                            <div>
+                                <ul>
+
                                     <input type="date" name="dateReserve">
                                     <select id="" name="time_choose" required>
                                         <option value="">Choose your time</option>
@@ -130,12 +131,12 @@ require_once('header.php');
                                         <option value="9">table for 9-10</option>
                                         <option value="10">table for 10+</option>
                                     </select>
-                                </form>
-                            </ul>
-                        </div>
-                        <br><br>
-                        <a href="#" class="w3ls-favorite w3ls-favoriate-like"> Make a reservation</a>
 
+                                </ul>
+                            </div>
+                            <br><br>
+                            <input type="submit" value="Make a reservation" class="w3ls-favorite w3ls-favoriate-like">
+                        </form>
                         <div class="single-page-icons social-icons">
                             <ul>
                                 <li><h4>Share on</h4></li>
