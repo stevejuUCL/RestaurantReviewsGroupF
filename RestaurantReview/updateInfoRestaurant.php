@@ -2,6 +2,10 @@
 require_once('PHP_Database/phpDatabaseConnection.php');
 require_once('header.php');
 
+// loop if check from database if user exist in correct table
+// if true >> $exist = true;
+// else >> $exist = false;
+
 $userID = $_SESSION['userID'];
 $username = $_SESSION['username'];
 $email = $_SESSION['email'];
@@ -54,22 +58,16 @@ if (mysqli_num_rows($resultExist) > 0) {
     <div class="container">
     <div class="login-agileinfo">
         <form action="updateInfo.php" method="post">
+            <label>Please Update Your Account </label>
             <input class="agile-ltext" type="hidden" name="userID" value="<?php echo $userID?>">
             <input class="agile-ltext" type="hidden" name="userType" value="restaurant">
-            <label> Username </label>
-            <input class="agile-ltext" type="text" name="username" placeholder="Username" value="<?php echo $username?>">
-            <label> Your Name</label>
-            <input class="agile-ltext" type="text" name="name" placeholder="Your Name" required>
-            <label> Address </label>
-            <input class="agile-ltext" type="text" name="address" placeholder="Address" required>
-            <label> Telephone Number </label>
-            <input class="agile-ltext" type="tel" name="contactNumber" placeholder="Tel.no" required>
-            <label> Cuisine </label>
-            <input class="agile-ltext" type="text" name="typeOfCuisine" placeholder="Cuisine" required>
-            <label> Price Range </label>
-            <input class="agile-ltext" type="number" name="priceRange" placeholder="Price Range" required>
-            <label> Email </label>
-            <input class="agile-ltext" type="email" name="email" placeholder="Email" value="<?php echo $email?>">
+            <input class="agile-ltext" type="text" name="username" placeholder="Username" value="<?php echo $username?>" required="">
+            <input class="agile-ltext" type="text" name="name" placeholder="Full Name" required="">
+            <input class="agile-ltext" type="text" name="address" placeholder="Address" required="">
+            <input class="agile-ltext" type="text" name="contactNumber" placeholder="Phone Number" required="">
+            <input class="agile-ltext" type="text" name="typeOfCuisine" placeholder="Type of Cuisine" required="">
+            <input class="agile-ltext" type="text" name="priceRange" placeholder="Price" required="">
+            <input class="agile-ltext" type="email" name="email" placeholder="Email" value="<?php echo $email?>" required="">
             <input type="submit" value="Submit">
         </form>
     </div>
