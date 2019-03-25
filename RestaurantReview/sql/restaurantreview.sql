@@ -82,6 +82,16 @@ CREATE TABLE `restaurant` (
 -- --------------------------------------------------------
 
 --
+-- Dumping data for table `restaurant`
+--
+
+INSERT INTO `restaurant` (`restaurantID`, `name`, `address`, `contactNumber`, `typeOfCuisine`, `priceRange`) VALUES
+(3, 'Little Cook', '36 a St. YU7H YGJ', 332, 'American', 2);
+
+-- --------------------------------------------------------
+
+
+--
 -- Table structure for table `users`
 --
 
