@@ -36,7 +36,7 @@ require_once('header.php');
                     </ul>
                     <div class="clearfix"> </div>
                 </div>
-                <button type="submit" value="submit_button">Sign Up!</button>
+                <input type="submit" value="SIGNUP">
             </form>
             <p>Already have an account?  <a href="../HTMLfiles-noLongerUsed/loginRestaurantOwner.html"> Login Now!</a></p>
         </div>
