@@ -9,8 +9,14 @@ if (isset($_SESSION["userID"])) {
     $userID = $_SESSION['userID'];
     $userType = $_SESSION['userType'];
 
-
     ?>
+    <title>My Reservations</title>
+    <div class="container">
+        <ol class="breadcrumb w3l-crumbs">
+            <li><a href="index.php"><i class="fa fa-home"></i> Home</a></li>
+            <li class="active">My Reservations</li>
+        </ol>
+    </div>
     <style>
         .form-popup {
             display: none;

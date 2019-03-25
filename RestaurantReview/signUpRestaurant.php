@@ -81,6 +81,7 @@ require_once('header.php');
             }
             return true;
         }
+</script>
 
 <?php
 require_once('footer.php');

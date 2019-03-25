@@ -7,7 +7,7 @@ require_once('header.php');
     <div class="container">
         <ol class="breadcrumb w3l-crumbs">
             <li><a href="index.php"><i class="fa fa-home"></i> Home</a></li>
-            <li class="active">Signup</li>
+            <li class="active">Sign up</li>
         </ol>
     </div>
     <!-- //breadcrumb -->

@@ -1,12 +1,3 @@
--- phpMyAdmin SQL Dump
--- version 4.8.5
--- https://www.phpmyadmin.net/
---
--- Host: 127.0.0.1
--- Generation Time: Mar 25, 2019 at 08:12 AM
--- Server version: 10.1.38-MariaDB
--- PHP Version: 7.3.2
-
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
 START TRANSACTION;
@@ -95,9 +86,9 @@ CREATE TABLE `restaurant` (
 --
 
 INSERT INTO `restaurant` (`restaurantID`, `name`, `address`, `contactNumber`, `typeOfCuisine`, `priceRange`) VALUES
-(3, 'Little Cook', '36 a St. YU7H YGJ', 332, '0', 2),
-(6, 'Anh Duong Le', 'Flat 4, 22 Carburton Street', 934039403, '0', 1),
-(11, 'Little Lamb', '50 Gower Street, London', 2147483647, '', 1),
+(3, 'Little Cook', '36 a St. YU7H YGJ', 332, 'American', 2),
+(6, 'Anh Duong Le', 'Flat 4, 22 Carburton Street', 934039403, 'Japanese', 1),
+(11, 'Little Lamb', '50 Gower Street, London', 2147483647, 'Italian', 1),
 (12, 'Sugar', '10 Gower Street', 2147483647, 'Korean', 11),
 (13, 'yiming', '11 the combne', 799776326, 'chinese', 10);
 
