@@ -380,32 +380,34 @@ require_once('header.php');
                         </div>
                         <div>
                             <ul>
-                                <input type="date" name="dateReserve">
-                                <select id="" name="time_choose" required>
-                                    <option value="">Choose your time</option>
-                                    <option value="05:30pm">05:30pm</option>
-                                    <option value="06:00pm">06:00pm</option>
-                                    <option value="06:30pm">06:30pm</option>
-                                    <option value="07:00pm">07:00pm</option>
-                                    <option value="07:30pm">07:30pm</option>
-                                    <option value="08:00pm">08:00pm</option>
-                                    <option value="08:30pm">08:00pm</option>
-                                    <option value="09:00pm">09:00pm</option>
-                                    <option value="09:30pm">09:30pm</option>
-                                    <option value="10:00pm">10:00pm</option>
-                                    <option value="10:30pm">10:30pm</option>
-                                    <option value="11:00pm">11:00pm</option>
-                                </select>
-                                <select id="" name="people_choose" required>
-                                    <option value="">Choose table size</option>
-                                    <option value="tableFor1">table for 1</option>
-                                    <option value="tableFor2">table for 2</option>
-                                    <option value="tableFor3">table for 3</option>
-                                    <option value="tableFor4">table for 4</option>
-                                    <option value="tableFor5-8">table for 5-8</option>
-                                    <option value="tableFor9-10">table for 9-10</option>
-                                    <option value="tableFor10+">table for 10+</option>
-                                </select>
+                                <form action="createNewRsv.php" method="POST">
+                                    <input type="date" name="dateReserve">
+                                    <select id="" name="time_choose" required>
+                                        <option value="">Choose your time</option>
+                                        <option value="17:30:00">05:30pm</option>
+                                        <option value="18:00:00">06:00pm</option>
+                                        <option value="18:30:00">06:30pm</option>
+                                        <option value="19:00:00">07:00pm</option>
+                                        <option value="19:30:00">07:30pm</option>
+                                        <option value="20:00:00">08:00pm</option>
+                                        <option value="20:30:00">08:00pm</option>
+                                        <option value="21:00:00">09:00pm</option>
+                                        <option value="21:30:00">09:30pm</option>
+                                        <option value="22:00:00">10:00pm</option>
+                                        <option value="22:30:00">10:30pm</option>
+                                        <option value="23:00:00">11:00pm</option>
+                                    </select>
+                                    <select id="" name="people_choose" required>
+                                        <option value="">Choose table size</option>
+                                        <option value="1">table for 1</option>
+                                        <option value="2">table for 2</option>
+                                        <option value="3">table for 3</option>
+                                        <option value="4">table for 4</option>
+                                        <option value="5">table for 5-8</option>
+                                        <option value="9">table for 9-10</option>
+                                        <option value="10">table for 10+</option>
+                                    </select>
+                                </form>
                             </ul>
                         </div>
                         <br><br>
