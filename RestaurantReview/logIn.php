@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] != "POST") {
                 $_SESSION['userType'] = $rowLogin['userType'];
                 if ($rowLogin['userType'] == "businessman") {
                     header('Location: updateInfoBusinessman.php');
-                } elseif ($rowLogin['userType'] == "restaurant") {
+                } elseif ($_SESSION['userType'] == "restaurant") {
                     header('Location: updateInfoRestaurant.php');
                 }
             } else {

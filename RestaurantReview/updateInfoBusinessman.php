@@ -60,18 +60,19 @@ if (mysqli_num_rows($resultExist) > 0) {
             <div class="container">
                 <div class="login-agileinfo">
                     <form action="updateInfo.php" method="post">
+                        <label>Please Update Your Account </label>
                         <input class="form-group" type="hidden" name="userID" value="<?php echo $userID?>">
                         <input class="form-group" type="hidden" name="userType" value="businessman">
-                        <label>Username</label>
-                        <input class="form-group" type="text" name="username" placeholder="Username" value="<?php echo $username?>">
-                        <label>Name</label>
-                        <input class="form-group" type="text" name="name" placeholder="Your Name">
-                        <label>Contact</label>
-                        <input class="form-group" type="tel" name="contactNumber" placeholder="Tel no">
-                        <label>Company</label>
-                        <input class="form-group" type="text" name="company" placeholder="company">
-                        <label>Email</label>
-                        <input class="form-group" type="email" name="email" placeholder="Email" value="<?php echo $email?>">
+
+                        <input class="agile-ltext" type="text" name="username" placeholder="Username" value="<?php echo $username?>" required="">
+
+                        <input class="agile-ltext" type="text" name="name" placeholder="Full Name" required="">
+
+                        <input class="agile-ltext" type="text" name="contactNumber" placeholder="Phone Number" required="">
+
+                        <input class="agile-ltext" type="text" name="company" placeholder="Company Name" required="">
+
+                        <input class="agile-ltext" type="email" name="email" placeholder="Email" value="<?php echo $email?>" required="">
                         <input type="submit" value="Submit">
                     </form>
                 </div>

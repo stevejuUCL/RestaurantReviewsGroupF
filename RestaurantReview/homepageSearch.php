@@ -4,34 +4,27 @@
 require_once('header.php');
 ?>
 <style>
-table {
-font-family: arial, sans-serif;
-border-collapse: collapse;
-width: 100%;
-}
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
 
-td, th {
-border: 1px solid #ff5063;
-text-align: center;
-padding: 8px;
-}
+    td, th {
+        border: 1px solid #ff5063;
+        text-align: center;
+        padding: 8px;
+    }
 
-tr:nth-child(even) {
-background-color: lightcoral;
-}
+    tr:nth-child(even) {
+        background-color: lightcoral;
+    }
 </style>
 <br><br><br><br><br>
 <div>
     <p style='text-align:center;'>
-        <table>
-        <tr>
-            <th>Name</th>
-            <th>Contact Number</th>
-            <th>Address</th>
-            <th>Type</th>
-            <th>Price</th>
-            <th></th>
-        </tr>
+    <table>
+
         <?php
         /**
          * Created by PhpStorm.
@@ -49,14 +42,22 @@ background-color: lightcoral;
 
         if (mysqli_num_rows($searchResult) > 0) {
             while ($row = $searchResult->fetch_assoc()) {
-                echo "<tr>".
-                     "<td>".$row["name"]."</td>".
-                     "<td>".$row["contactNumber"]."</td>".
-                     "<td>".$row["address"]."</td>".
-                     "<td>".$row["typeOfCuisine"]."</td>".
-                     "<td>".$row["priceRange"]."</td>".
-                     "<td><a href=\"#\" style='color: #ffffff;' data-toggle=\"modal\" data-target=\"#myModal1\">Make a reservation</a></td>".
-                     "</tr>";
+                echo "<tr>
+                        <th>Name</th>
+                        <th>Contact Number</th>
+                        <th>Address</th>
+                        <th>Type</th>
+                        <th>Price</th>
+                        <th></th>
+                      </tr>";
+                echo "<tr>" .
+                        "<td>" . $row["name"] . "</td>" .
+                        "<td>" . $row["contactNumber"] . "</td>" .
+                        "<td>" . $row["address"] . "</td>" .
+                        "<td>" . $row["typeOfCuisine"] . "</td>" .
+                        "<td>" . $row["priceRange"] . "</td>" .
+                        "<td><a href=\"#\" style='color: #ffffff;' data-toggle=\"modal\" data-target=\"#myModal1\">Make a reservation</a></td>" .
+                    "</tr>";
             }
         } else {
             echo "<h3 style='text-align:center'>Sorry, restaurant not found.😢<h3>";
@@ -72,7 +73,8 @@ background-color: lightcoral;
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">×</span></button>
             </div>
             <section>
                 <div class="modal-body">
@@ -135,7 +137,7 @@ background-color: lightcoral;
                             </ul>
                         </div>
                     </div>
-                    <div class="clearfix"> </div>
+                    <div class="clearfix"></div>
                 </div>
             </section>
         </div>
